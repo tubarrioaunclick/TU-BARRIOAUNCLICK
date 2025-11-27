@@ -13,7 +13,7 @@
     <meta name="robots" content="index, follow">
     
     <!-- Preload de Recursos Críticos -->
-    <link rel="preload" href="./shared/img/icon-192x192.webp" as="image" type="image/png">
+    <link rel="preload" href="https://tubarrioaunclick.com/shared/img/icon-192x192.webp" as="image" type="image/png">
     <link rel="preload" href="./shared/js/splash.js" as="script">
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style" crossorigin="anonymous">
     
@@ -31,15 +31,22 @@
     <script src="./shared/js/config.js"></script>
 
     <!-- Iconos y Manifest -->
-    <link rel="icon" href="./shared/img/icon-abeja-sola.png" type="image/png" sizes="32x32" />
-    <link rel="icon" href="./shared/img/icon-192x192.webp" type="image/png" sizes="192x192" />
-    <link rel="apple-touch-icon" href="./shared/img/icon-192x192.webp" />
-    <link rel="mask-icon" href="./shared/img/icon-abeja-sola.png" color="#e1306c">
+    <link rel="icon" href="https://tubarrioaunclick.com/shared/img/icon-abeja-sola.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="https://tubarrioaunclick.com/shared/img/icon-192x192.webp" type="image/png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://tubarrioaunclick.com/shared/img/icon-192x192.webp" />
+    <link rel="mask-icon" href="https://tubarrioaunclick.com/shared/img/icon-abeja-sola.png" color="#e1306c">
 
     <!-- Meta Tags PWA Mejorados -->
     <meta name="apple-mobile-web-app-title" content="TuBarrioSelector">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- ICONO PARA GOOGLE SEARCH - AGREGAR ESTO -->
+    <link rel="icon" href="https://tubarrioaunclick.com/shared/img/icon-192x192.png" type="image/png" sizes="192x192">
+    <link rel="apple-touch-icon" href="https://tubarrioaunclick.com/shared/img/icon-192x192.png">
+    
+    <!-- META TAG ESPECÍFICO PARA GOOGLE -->
+    <meta name="google-site-verification" content="tu-codigo-de-verificacion">
     
     <meta name="application-name" content="TuBarrioSelector">
     <meta name="mobile-web-app-capable" content="yes">
@@ -47,30 +54,65 @@
     <meta name="msapplication-TileColor" content="#764ba2">
     <meta name="msapplication-TileImage" content="./shared/img/icon-192x192.png">
 
-    <!-- Schema.org Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebApplication",
-        "name": "Tu Barrio A Un Click",
-        "description": "Plataforma para descubrir comercios y servicios locales en tu zona",
-        "url": "https://tudominio.com",
-        "applicationCategory": "BusinessApplication",
-        "operatingSystem": "Any",
-        "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD"
-        },
-        "author": {
-            "@type": "Organization",
-            "name": "Tu Barrio A Un Click"
-        },
-        "screenshot": "./shared/img/icon-192x192.png",
-        "browserRequirements": "Requires JavaScript. Requires HTML5."
-    }
-    </script>
-
+   <!-- Schema.org Structured Data CORREGIDO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Tu Barrio A Un Click",
+  "description": "Plataforma para descubrir comercios y servicios locales en Castelar, Ituzaingó, Morón y Merlo",
+  "url": "https://tubarrioaunclick.com",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Any",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "ARS"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "Tu Barrio A Un Click",
+    "url": "https://tubarrioaunclick.com"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://tubarrioaunclick.com/{search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  },
+  "screenshot": "https://tubarrioaunclick.com/shared/img/icon-192x192.png",
+  "browserRequirements": "Requires JavaScript. Requires HTML5.",
+  "sameAs": []
+}
+</script>
+<!-- Schema adicional para LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization", 
+  "name": "Tu Barrio A Un Click",
+  "description": "Plataforma de comercios y servicios locales en el Oeste del Gran Buenos Aires",
+  "url": "https://tubarrioaunclick.com",
+  "logo": "https://tubarrioaunclick.com/shared/img/icon-192x192.png",
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "Buenos Aires",
+    "addressCountry": "AR"
+  },
+  "areaServed": ["Castelar", "Ituzaingó", "Morón", "Merlo"],
+  "serviceArea": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": -34.6489,
+      "longitude": -58.6475
+    },
+    "geoRadius": "15000"
+  }
+}
+</script>
     <style>
         :root {
             --primary: #1e3a8a;

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruleta de Descuentos - Tu Barrio a un Click</title>
+    <link rel="stylesheet" href="/shared/css/ruleta.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎡 Gana Descuentos Increíbles</h1>
+            <p>¡Gira la ruleta y descubre tu premio!</p>
+        </header>
+
+        <div class="ruleta-container">
+            <div class="ruleta" id="ruleta">
+                <!-- Los sectores se generan con JavaScript -->
+            </div>
+            <div class="selector"></div>
+            <button class="btn-girar" id="btnGirar">¡GIRAR!</button>
+        </div>
+
+        <!-- Modal para ingresar teléfono -->
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <span class="close" id="closeModal">&times;</span>
+                <h2>¡Felicidades! 🎉</h2>
+                <p id="premioTexto">Has ganado: <span id="premioGanado"></span></p>
+                <div class="form-group">
+                    <label for="telefono">Ingresa tu teléfono para validar el premio:</label>
+                    <input type="tel" id="telefono" placeholder="Ej: +34 123 456 789" required>
+                </div>
+                <button class="btn-validar" id="btnValidar">Validar Premio</button>
+            </div>
+        </div>
+
+        <!-- Comercios participantes -->
+        <div class="comercios">
+            <h3>Comercios Participantes</h3>
+            <div class="logos-comercios">
+                <div class="logo-item">
+                    <img src="/shared/img/icon-192x192.webp" alt="Comercio 1">
+                    <span>Panadería María</span>
+                </div>
+                <div class="logo-item">
+                    <img src="/shared/img/icon-192x192.webp" alt="Comercio 2">
+                    <span>Cafetería Central</span>
+                </div>
+                <div class="logo-item">
+                    <img src="/shared/img/icon-192x192.webp" alt="Comercio 3">
+                    <span>Almacén Don José</span>
+                </div>
+                <div class="logo-item">
+                    <img src="/shared/img/icon-192x192.webp" alt="Comercio 1">
+                    <span>Panadería San Jose</span>
+                </div>
+                <div class="logo-item">
+                    <img src="/shared/img/icon-192x192.webp" alt="Comercio 2">
+                    <span>Cafetería Cacho</span>
+                </div>
+                <div class="logo-item">
+                    <img src="/shared/img/icon-192x192.webp" alt="Comercio 3">
+                    <span>Almacén Don Pedro</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/shared/js/ruleta.js"></script>
+</body>
+</html>
