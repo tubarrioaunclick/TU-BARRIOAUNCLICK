@@ -7,24 +7,21 @@ Disallow: /private/
 Disallow: /config/
 Disallow: /includes/
 Disallow: /tmp/
+Disallow: /data/
+Disallow: /datos/
 
-# Bloquear archivos de sistema y configuración
+# Bloquear archivos de sistema
 Disallow: /.env
 Disallow: /.htaccess
 Disallow: /web.config
-Disallow: /package.json
-Disallow: /composer.json
-Disallow: /yarn.lock
 
-# Bloquear parámetros de tracking para evitar contenido duplicado
+# Bloquear parámetros de tracking
 Disallow: /*?utm_
 Disallow: /*?fbclid=
 Disallow: /*?gclid=
-Disallow: /*?msclkid=
-Disallow: /*?ref=
 
-# Crawl delay para no sobrecargar el servidor
-Crawl-delay: 1
+# CORREGIDO: URL CORRECTA DEL SITEMAP
+Sitemap: https://www.tubarrioaunclick.com/sitemap.xml
 
-# Sitemap
-Sitemap: https://www.tubarrioaunclik.com/sitemap.xml
+# Host principal
+Host: https://www.tubarrioaunclick.com

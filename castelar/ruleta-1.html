@@ -57,8 +57,8 @@
         }
 
         .ruleta {
-            width: 440px;
-            height: 440px;
+            width: 480px;
+            height: 480px;
             border-radius: 50%;
             position: relative;
             box-shadow: 0 0 80px rgba(0, 255, 234, 0.7), inset 0 0 100px rgba(0,0,0,0.9);
@@ -70,7 +70,7 @@
 
         .sector {
             position: absolute;
-            width: 50%;
+            width: 15%;
             height: 50%;
             top: 0;
             left: 50%;
@@ -78,40 +78,53 @@
             clip-path: polygon(100% 0, 0% 0, 0% 100%);
         }
 
-        .texto-sector {
+        .numero-sector {
             position: absolute;
-            top: -18px;
-            left: 10px;
-            width: 140px;
-            transform: rotate(22.5deg);
+            top: -5px;
+            left: 12px;
+            width: 45px;
+            height: 45px;
+            transform: rotate(15deg);
             transform-origin: 0 0;
-            font-weight: 600;
-            font-size: 1rem;
+            font-weight: 800;
+            font-size: 1.8rem;
             text-align: center;
+            line-height: 45px;
             color: white;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
-            line-height: 1.3;
+            text-shadow: 0 0 10px rgba(0,0,0,0.9);
             z-index: 10;
-            background: rgba(10, 14, 23, 0.336);
-            padding: 8px 10px;
-            border-radius: 10px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 50%;
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 0 15px rgba(0, 255, 234, 0.7);
         }
 
-        .texto-sector strong { 
-            font-size: 1.15rem;
-            display: block;
-            color: var(--primary);
-            text-shadow: 0 0 8px rgba(0, 255, 234, 0.8); 
+
+        .premio-simple {
+            position: absolute;
+            top: 27px;
+            left: 35px;
+            width: 110px;
+            transform: rotate(97deg);
+            transform-origin: 0 0;
+            font-weight: 600;
+            font-size: 0.5rem;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            line-height: 1.2;
+            z-index: 9;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 3px 5px;
+            border-radius: 5px;
         }
 
         .centro {
             position: absolute;
             top: 50%; 
             left: 50%;
-            width: 100px; 
-            height: 100px;
+            width: 110px; 
+            height: 110px;
             background: radial-gradient(circle, #00ffea, #0066ff);
             border-radius: 50%;
             transform: translate(-50%, -50%);
@@ -121,7 +134,7 @@
             align-items: center;
             justify-content: center;
             font-family: 'Orbitron', sans-serif;
-            font-size: 0.8rem;
+            font-size: 0.9rem;
             color: #000;
             font-weight: bold;
             text-align: center;
@@ -131,14 +144,14 @@
 
         .selector {
             position: absolute;
-            top: -20px;
+            top: -25px;
             left: 50%;
             transform: translateX(-50%);
             width: 0; 
             height: 0;
-            border-left: 25px solid transparent;
-            border-right: 25px solid transparent;
-            border-top: 60px solid var(--primary);
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            border-top: 70px solid var(--primary);
             filter: drop-shadow(0 0 20px var(--primary));
             z-index: 20;
         }
@@ -146,10 +159,10 @@
         .selector::after {
             content: '';
             position: absolute;
-            top: -65px; 
-            left: -20px;
-            width: 40px; 
-            height: 20px;
+            top: -75px; 
+            left: -25px;
+            width: 50px; 
+            height: 25px;
             background: var(--primary);
             clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
             animation: pulso 2s infinite alternate;
@@ -167,10 +180,10 @@
         }
 
         .btn-girar {
-            margin-top: 40px;
-            padding: 20px 60px;
+            margin-top: 4px;
+            padding: 10px 20px;
             font-family: 'Orbitron', sans-serif;
-            font-size: 1.8rem;
+            font-size: 1rem;
             background: linear-gradient(45deg, var(--primary), var(--secondary));
             color: #000;
             border: none;
@@ -240,7 +253,7 @@
             position: fixed;
             z-index: 1000;
             left: 0; top: 0;
-            width: 100%; height: 100%;
+            width: 100%; height: 100vh;
             background: rgba(0,0,0,0.95);
             backdrop-filter: blur(12px);
         }
@@ -251,8 +264,9 @@
             left: 50%;
             transform: translate(-50%, -50%);
             background: linear-gradient(135deg, #1e2d3d, #0f1620);
-            padding: 10px;
+            padding: 3px 20px;
             width: 90%;
+            height: 95%;
             max-width: 520px;
             border-radius: 25px;
             border: 2px solid var(--primary);
@@ -279,12 +293,12 @@
         }
 
         .qr-code {
-            margin: 25px auto;
-            padding: 15px;
+            margin: 10px auto;
+            padding: 5px;
             background: white;
             border-radius: 15px;
-            width: 220px;
-            height: 220px;
+            width: 200px;
+            height: 200px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -298,14 +312,14 @@
 
         .codigo-cupon {
             font-family: 'Orbitron', sans-serif;
-            font-size: 1rem;
+            font-size: .9rem;
             color: var(--primary);
-            letter-spacing: 6px;
+            letter-spacing: 1px;
             background: rgba(0,255,234,0.1);
-            padding: 20px;
-            border-radius: 15px;
+            padding: 10px;
+            border-radius: 12px;
             border: 2px dashed var(--primary);
-            margin: 20px 0;
+            margin: 10px 0;
             cursor: pointer;
             transition: all 0.3s;
         }
@@ -322,13 +336,13 @@
 
         input#telefono {
             width: 100%;
-            padding: 18px;
+            padding: 8px;
             border-radius: 12px;
             border: 1px solid #444;
             background: #111;
             color: white;
-            font-size: 1.2rem;
-            margin: 20px 0;
+            font-size: 1rem;
+            margin: 5px 0;
             transition: all 0.3s;
         }
 
@@ -358,35 +372,96 @@
             transform: translateX(0);
         }
 
-        /* Responsive */
+        .info-premio {
+            background: rgba(0, 255, 234, 0.05);
+            border-left: 4px solid var(--primary);
+            padding: 5px;
+            margin: 5px 0;
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        .negocio-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 5px 0;
+            padding: 5px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+        }
+
+        .negocio-icon {
+            font-size: 2rem;
+            margin-right: 15px;
+            color: var(--primary);
+        }
+
+        .negocio-text {
+            text-align: left;
+        }
+
+        .negocio-nombre {
+            font-size: 1.3rem;
+            color: var(--secondary);
+            font-weight: bold;
+        }
+
+        .negocio-direccion {
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
         @media (max-width: 768px) {
-            header h1 { font-size: 2.8rem; }
-            .ruleta { width: 320px; height: 320px; }
-            .texto-sector { 
-                width: 120px; 
-                left: 5px;
-                font-size: 0.8rem; 
-                top: -15px;
+            /*.container{
+                padding: 20px 60px;
+            }*/
+            .modal-content{
+                height: auto;
             }
-            .texto-sector strong { font-size: 0.9rem; }
-            .centro { width: 70px; height: 70px; font-size: 0.7rem; }
+            header h1 { font-size: 2.8rem; }
+            .ruleta { width: 340px; height: 340px; }
+            .numero-sector { 
+                width: 35px; 
+                height: 35px;
+                font-size: 1.4rem; 
+                line-height: 35px;
+                left: 25px;
+                top: 10px;
+            }
+            .premio-simple { 
+                width: 90px; 
+                font-size: 0.75rem; 
+                left: 20px;
+                top: 55px;
+            }
+            .centro { width: 80px; height: 80px; font-size: 0.8rem; }
             .btn-girar { padding: 15px 40px; font-size: 1.4rem; }
-            .codigo-cupon{font-size: 1rem;}
+            .codigo-cupon{font-size: 0.9rem;}
             .qr-code { width: 180px; height: 180px; }
         }
 
         @media (max-width: 480px) {
             header h1 { font-size: 2.2rem; }
             header p { font-size: 1.2rem; }
-            .ruleta { width: 280px; height: 280px; }
-            .texto-sector { 
-                width: 100px; 
-                left: 5px;
-                font-size: 0.7rem; 
-                top: -15px;
+            .ruleta { width: 300px; height: 300px; margin: 40px auto; }
+            .numero-sector { 
+                width: 30px; 
+                height: 30px;
+                font-size: 1.2rem; 
+                line-height: 30px;
+                left: 7px;
+                top: -6px;
             }
-            .codigo-cupon{font-size: .7rem;}
-            .qr-code {display: flex;flex-direction: column;width: 220px;height: 220px;}
+            .premio-simple { 
+                width: 80px; 
+                font-size: 0.65rem; 
+                left: 23px;
+                top: 18px;
+                display: none;
+            }
+            .codigo-cupon{font-size: .7rem; letter-spacing: 2px;}
+            .qr-code { width: 190px; height: 190px; }
         }
     </style>
 </head>
@@ -416,21 +491,41 @@
         <div class="modal-content">
             <span class="close" id="closeModal">×</span>
             <h2>🎉 FELICIDADES 🎉</h2>
-            <p>Has ganado:</p>
-            <h3 id="premioGanado" style="color:var(--primary); margin:20px 0; font-size:2rem;"></h3>
-            <p id="comercioGanado" style="color:#ccc;"></p>
+            <p>Has ganado el premio número:</p>
+            <h3 id="numeroGanado" style="color:var(--primary); margin:5px 0; font-size:2rem;"></h3>
+            <h4 id="premioGanado" style="color:var(--secondary); margin:5px 0; font-size:1rem;"></h4>
+            
+            <div class="negocio-info">
+                <div class="negocio-icon" id="negocioIcon"></div>
+                <div class="negocio-text">
+                    <div class="negocio-nombre" id="negocioNombre"></div>
+                    <div class="negocio-direccion" id="negocioDireccion"></div>
+                </div>
+            </div>
+            
+            <div class="info-premio">
+                <h4>📋 Detalles del premio:</h4>
+                <p id="descripcionPremio" style="color:#aaa;"></p>
+                <p id="validezPremio" style="color:#00ffea; margin-top: 8px; font-size: 0.9rem;">
+                    <i class="fas fa-clock"></i> Válido por 7 días desde hoy
+                </p>
+            </div>
 
             <div class="qr-code" id="qrCode">
                 <div style="text-align: center; color: #666; font-size: 0.9rem;">
-                    <i class="fas fa-qrcode" style="font-size: 3rem; margin-bottom: 10px;"></i>
-                    <div>QR se generará aquí</div>
+                    <i class="fas fa-qrcode" style="font-size: 2.5rem; margin-bottom: 10px;"></i>
+                    <div>Escanea este QR para canjear</div>
                 </div>
             </div>
-            <div class="codigo-cupon" id="codigoCupon" title="Haz clic para copiar"></div>
+            
+            <div style="margin: 15px 0;">
+                <p style="color:#888; margin-bottom: 8px;">Código único de canje:</p>
+                <div class="codigo-cupon" id="codigoCupon" title="Haz clic para copiar"></div>
+            </div>
 
             <input type="tel" id="telefono" placeholder="📱 Tu WhatsApp (+54 9 11 ...)" required>
 
-            <button class="btn-girar" id="btnValidar" style="width:100%; padding:10px; font-size:1rem;">
+            <button class="btn-girar" id="btnValidar" style="width:100%; padding:12px; font-size:1rem;">
                 <i class="fab fa-whatsapp"></i> Enviar Cupón por WhatsApp
             </button>
             <p style="margin-top:15px; font-size:0.9rem; color:#777;">
@@ -444,75 +539,52 @@
 <div class="notificacion" id="notificacion"></div>
 
 <script>
+// 24 PREMIOS CON MÁS VARIEDAD
 const premios = [
-    { 
-        texto: "20% OFF", 
-        comercio: "Panadería María", 
-        whatsapp: "5491123456789",
-        qrId: "PAN20",
-        descripcion: "20% de descuento en toda la panadería"
-    },
-    { 
-        texto: "Café GRATIS", 
-        comercio: "Cafetería Central", 
-        whatsapp: "5491155556666",
-        qrId: "CAFEGRATIS",
-        descripcion: "Café americano gratuito"
-    },
-    { 
-        texto: "2x1 en lácteos", 
-        comercio: "Almacén Don José", 
-        whatsapp: "5491177778888",
-        qrId: "LACTEOS2X1",
-        descripcion: "Lleva 2 productos lácteos por el precio de 1"
-    },
-    { 
-        texto: "Medialunas GRATIS", 
-        comercio: "Panadería San José", 
-        whatsapp: "5491199990000",
-        qrId: "MEDIALUNAS",
-        descripcion: "Docena de medialunas gratis"
-    },
-    { 
-        texto: "10% OFF", 
-        comercio: "Cafetería Central", 
-        whatsapp: "5491155556666",
-        qrId: "CAFE10",
-        descripcion: "10% de descuento en toda la cafetería"
-    },
-    { 
-        texto: "15% en fiambres", 
-        comercio: "Almacén Don José", 
-        whatsapp: "5491177778888",
-        qrId: "FIAMBRES15",
-        descripcion: "15% de descuento en fiambres"
-    },
-    { 
-        texto: "30% OFF", 
-        comercio: "Panadería María", 
-        whatsapp: "5491123456789",
-        qrId: "PAN30",
-        descripcion: "30% de descuento en productos seleccionados"
-    },
-    { 
-        texto: "Mejor suerte!", 
-        comercio: "La Proxima", 
-        sinPremio: true,
-        qrId: "SIN_PREMIO",
-        descripcion: "Inténtalo nuevamente"
-    }
+    { numero: "1", texto: "20% OFF", comercio: "Panadería María", direccion: "Av. Principal 123", icono: "🥐", whatsapp: "5491123456789", qrId: "PAN20", descripcion: "20% de descuento en toda la panadería. Válido de lunes a viernes." },
+    { numero: "2", texto: "Café GRATIS", comercio: "Cafetería Central", direccion: "Calle Central 456", icono: "☕", whatsapp: "5491155556666", qrId: "CAFEGRATIS", descripcion: "Café americano gratuito con cualquier compra." },
+    { numero: "3", texto: "2x1 Lácteos", comercio: "Almacén Don José", direccion: "Calle Secundaria 789", icono: "🥛", whatsapp: "5491177778888", qrId: "LACTEOS2X1", descripcion: "Lleva 2 productos lácteos por el precio de 1." },
+    { numero: "4", texto: "Medialunas GRATIS", comercio: "Panadería San José", direccion: "Av. Norte 321", icono: "🥐", whatsapp: "5491199990000", qrId: "MEDIALUNAS", descripcion: "Docena de medialunas gratis con compra mayor a $1000." },
+    { numero: "5", texto: "10% OFF", comercio: "Pizzería La Napoli", direccion: "Plaza Central 555", icono: "🍕", whatsapp: "5491111111111", qrId: "PIZZA10", descripcion: "10% de descuento en todas las pizzas." },
+    { numero: "6", texto: "15% en Fiambres", comercio: "Fiambrería El Buen Sabor", direccion: "Calle Comercial 222", icono: "🥓", whatsapp: "5491222222222", qrId: "FIAMBRES15", descripcion: "15% de descuento en toda la sección de fiambres." },
+    { numero: "7", texto: "30% OFF", comercio: "Heladería Dulce Tentación", direccion: "Esquina del Parque", icono: "🍦", whatsapp: "5491333333333", qrId: "HELADO30", descripcion: "30% de descuento en helados de 1kg." },
+    { numero: "8", texto: "Corte GRATIS", comercio: "Barbería Clásica", direccion: "Av. Oeste 777", icono: "✂️", whatsapp: "5491444444444", qrId: "CORTEGRATIS", descripcion: "Corte de cabello gratuito (solo para nuevos clientes)." },
+    { numero: "9", texto: "25% en Ropa", comercio: "Boutique Elegante", direccion: "Shopping Local 101", icono: "👗", whatsapp: "5491555555555", qrId: "ROPA25", descripcion: "25% de descuento en ropa de temporada." },
+    { numero: "10", texto: "Lavado AUTO", comercio: "Lavadero Flash", direccion: "Estación de Servicio 333", icono: "🚗", whatsapp: "5491666666666", qrId: "LAVADOAUTO", descripcion: "Lavado de auto completo gratis." },
+    { numero: "11", texto: "Postre GRATIS", comercio: "Pastelería Delicia", direccion: "Calle Dulce 888", icono: "🍰", whatsapp: "5491777777777", qrId: "POSTREGRATIS", descripcion: "Postre gratis con compra mayor a $1500." },
+    { numero: "12", texto: "40% Zapatos", comercio: "Calzados Comodity", direccion: "Centro Comercial 404", icono: "👟", whatsapp: "5491888888888", qrId: "ZAPATOS40", descripcion: "40% de descuento en calzado deportivo." },
+    { numero: "13", texto: "Libro GRATIS", comercio: "Librería El Saber", direccion: "Calle Cultura 606", icono: "📚", whatsapp: "5491999999999", qrId: "LIBROGRATIS", descripcion: "Libro de regalo con compra de dos libros." },
+    { numero: "14", texto: "50% Juguetes", comercio: "Juguetería Divertida", direccion: "Av. Infantil 909", icono: "🧸", whatsapp: "5491000000000", qrId: "JUGUETES50", descripcion: "50% de descuento en juguetes seleccionados." },
+    { numero: "15", texto: "Smoothie GRATIS", comercio: "Juguería Natural", direccion: "Plaza Saludable 707", icono: "🥤", whatsapp: "5491010101010", qrId: "SMOOTHIEGRATIS", descripcion: "Smoothie natural gratis cualquier sabor." },
+    { numero: "16", texto: "15% Farmacia", comercio: "Farmacia Salud", direccion: "Calle Medicinal 505", icono: "💊", whatsapp: "5491212121212", qrId: "FARMACIA15", descripcion: "15% de descuento en perfumería y cosmética." },
+    { numero: "17", texto: "2x1 CINE", comercio: "Cine Paradiso", direccion: "Complejo Cinemático 111", icono: "🎬", whatsapp: "5491313131313", qrId: "ENTRADACINE", descripcion: "2x1 en entradas de cine de martes a jueves." },
+    { numero: "18", texto: "30% Masaje", comercio: "Spa Relax Total", direccion: "Zona Wellness 222", icono: "💆", whatsapp: "5491414141414", qrId: "MASAJE30", descripcion: "30% de descuento en masajes relajantes." },
+    { numero: "19", texto: "25% Deportes", comercio: "Deportes Activos", direccion: "Centro Deportivo 333", icono: "⚽", whatsapp: "5491515151515", qrId: "DEPORTES25", descripcion: "25% de descuento en artículos deportivos." },
+    { numero: "20", texto: "Desayuno GRATIS", comercio: "Cafetería Matutina", direccion: "Rincón del Desayuno 444", icono: "🍳", whatsapp: "5491616161616", qrId: "DESAYUNOGRAT", descripcion: "Desayuno completo gratis antes de las 11 AM." },
+    { numero: "21", texto: "20% Muebles", comercio: "Mueblería Hogar", direccion: "Av. del Mueble 555", icono: "🛋️", whatsapp: "5491717171717", qrId: "MUEBLES20", descripcion: "20% de descuento en muebles de living." },
+    { numero: "22", texto: "3x2 Golosinas", comercio: "Kiosco Dulzura", direccion: "Esquina de la Escuela 666", icono: "🍫", whatsapp: "5491818181818", qrId: "GOLOSINAS3X2", descripcion: "Lleva 3 productos de golosinas por el precio de 2." },
+    { numero: "23", texto: "15% Electrónica", comercio: "TecnoStore", direccion: "Centro Tecnológico 777", icono: "📱", whatsapp: "5491919191919", qrId: "TECNO15", descripcion: "15% de descuento en accesorios electrónicos." },
+    { numero: "24", texto: "Mejor suerte!", comercio: "Próxima vez", direccion: "Intenta de nuevo", icono: "🎯", sinPremio: true, qrId: "SIN_PREMIO", descripcion: "Inténtalo nuevamente en tu próximo giro." }
 ];
 
 const colores = [
-    '#ff3366', '#3366ff', '#ffcc00', '#00ff99',
-    '#ff6600', '#9900ff', '#00ffff', '#ff0066'
+    '#ff3333', '#66ccff', '#ffcc00', '#00ff99',
+    '#ff6600', '#9900ff', '#00ffff', '#ff0066',
+    '#33ff66', '#ff33cc', '#3366cc', '#ccff33',
+    '#ff6633', '#33ccff', '#cc33ff', '#ffcc33',
+    '#33ffcc', '#cc3366', '#66ff33', '#ff3366',
+    '#9966ff', '#66ff99', '#ff9966', '#3663ff'
 ];
 
 const ruleta = document.getElementById('ruleta');
 const btnGirar = document.getElementById('btnGirar');
 const modal = document.getElementById('modal');
+const numeroGanado = document.getElementById('numeroGanado');
 const premioGanado = document.getElementById('premioGanado');
-const comercioGanado = document.getElementById('comercioGanado');
+const negocioIcon = document.getElementById('negocioIcon');
+const negocioNombre = document.getElementById('negocioNombre');
+const negocioDireccion = document.getElementById('negocioDireccion');
+const descripcionPremio = document.getElementById('descripcionPremio');
 const qrCode = document.getElementById('qrCode');
 const codigoCupon = document.getElementById('codigoCupon');
 const telefonoInput = document.getElementById('telefono');
@@ -528,19 +600,31 @@ function crearSectores() {
     const totalSectores = premios.length;
     const anguloPorSector = 360 / totalSectores;
     
-    // Limpiar ruleta primero
     ruleta.innerHTML = '<div class="centro">GIRA<br>Y<br>GANA</div>';
     
     premios.forEach((premio, index) => {
         const sector = document.createElement('div');
         sector.className = 'sector';
         sector.style.background = colores[index];
-        sector.style.transform = `rotate(${index * anguloPorSector}deg)`;
         
+        // CORRECCIÓN CRÍTICA: Calculamos el ángulo correctamente
+        // Iniciamos con un offset para que el primer sector empiece en la posición correcta
+        const anguloInicial = 5 + (anguloPorSector / 4); // Ajuste para centrar el primer sector
+        const anguloRotacion = (index * anguloPorSector) + anguloInicial;
+        
+        sector.style.transform = `rotate(${anguloRotacion}deg)`;
+        
+        // Número grande y visible
+        const numero = document.createElement('div');
+        numero.className = 'numero-sector';
+        numero.textContent = premio.numero;
+        
+        // Texto pequeño del premio
         const texto = document.createElement('div');
-        texto.className = 'texto-sector';
-        texto.innerHTML = `<strong>${premio.texto}</strong><div style="font-size:0.85rem;margin-top:4px;">${premio.comercio}</div>`;
+        texto.className = 'premio-simple';
+        texto.textContent = premio.texto;
         
+        sector.appendChild(numero);
         sector.appendChild(texto);
         ruleta.appendChild(sector);
     });
@@ -591,11 +675,6 @@ function generarCodigoUnico(premio) {
     return `${premio.qrId}_${timestamp}_${random}`;
 }
 
-function generarQRUnico(codigo) {
-    // SOLO el código único - nada más para mantenerlo ultra corto
-    return codigo;
-}
-
 // Inicializar la ruleta
 crearSectores();
 actualizarContador();
@@ -608,15 +687,14 @@ btnGirar.addEventListener('click', () => {
     girosDisponibles--;
     actualizarContador();
 
-    // Seleccionar un premio aleatorio
     const indicePremio = Math.floor(Math.random() * premios.length);
     premioSeleccionado = premios[indicePremio];
 
-    // Calcular el ángulo final para que el premio seleccionado quede en el selector
-    const anguloPorSector = 360 / premios.length;
-    const anguloOffset = 15; // Ajuste para que el selector apunte correctamente
+    const totalSectores = premios.length;
+    const anguloPorSector = 360 / totalSectores;
     
-    // El ángulo final debe hacer que el sector seleccionado termine en la posición del selector
+    // CORRECCIÓN: Calcular el ángulo final correctamente
+    const anguloOffset = 15; // Ajuste fino para que el selector apunte exactamente al centro del sector
     const anguloFinal = 360 * 5 + (indicePremio * anguloPorSector) + anguloOffset;
 
     ruleta.style.transform = `rotate(${-anguloFinal}deg)`;
@@ -637,64 +715,56 @@ btnGirar.addEventListener('click', () => {
 });
 
 function mostrarPremio(p) {
+    numeroGanado.textContent = p.numero;
     premioGanado.textContent = p.texto;
-    comercioGanado.textContent = p.sinPremio ? "" : `🎁 Otorgado por ${p.comercio}`;
+    negocioIcon.textContent = p.icono;
+    negocioNombre.textContent = p.comercio;
+    negocioDireccion.textContent = p.direccion;
+    descripcionPremio.textContent = p.descripcion;
 
-    // Generar código único basado en el premio
     codigoActual = generarCodigoUnico(p);
     codigoCupon.textContent = codigoActual;
     codigoCupon.classList.remove('copiado');
     
-    // Generar QR único - SOLO con el código
     qrCode.innerHTML = "";
     
-    const qrContent = generarQRUnico(codigoActual);
-    
-    console.log("Contenido QR:", qrContent);
-    console.log("Longitud QR:", qrContent.length);
-    
-    // Verificar que QRCode esté disponible
     if (typeof QRCode !== 'undefined') {
         try {
             new QRCode(qrCode, {
-                text: qrContent,
-                width: 160,
-                height: 160,
+                text: codigoActual,
+                width: 140,
+                height: 140,
                 colorDark: "#000000",
                 colorLight: "#ffffff",
-                correctLevel: QRCode.CorrectLevel.H // Podemos usar nivel alto ahora
+                correctLevel: QRCode.CorrectLevel.H
             });
 
-            // Agregar información sobre el QR
             const qrInfo = document.createElement('div');
             qrInfo.style.marginTop = '10px';
             qrInfo.style.fontSize = '0.7rem';
             qrInfo.style.color = '#666';
-            qrInfo.textContent = `${p.texto} - ${p.comercio}`;
+            qrInfo.textContent = `Premio ${p.numero}`;
             qrCode.appendChild(qrInfo);
         } catch (error) {
-            console.error("Error generando QR:", error);
-            // Generar un QR más simple si falla
             qrCode.innerHTML = `
                 <div style="text-align: center; color: #666;">
-                    <div style="font-size: 3rem; margin-bottom: 10px;">📱</div>
+                    <div style="font-size: 2.5rem; margin-bottom: 10px;">📱</div>
                     <div>Usa el código:</div>
-                    <div style="font-size: 0.8rem; margin-top: 5px; font-weight: bold;">${codigoActual}</div>
+                    <div style="font-size: 0.7rem; margin-top: 5px; font-weight: bold;">${codigoActual}</div>
                 </div>
             `;
         }
     } else {
         qrCode.innerHTML = `
             <div style="text-align: center; color: #666;">
-                <div style="font-size: 3rem; margin-bottom: 10px;">📱</div>
+                <div style="font-size: 2.5rem; margin-bottom: 10px;">📱</div>
                 <div>Usa el código:</div>
-                <div style="font-size: 0.8rem; margin-top: 5px; font-weight: bold;">${codigoActual}</div>
+                <div style="font-size: 0.7rem; margin-top: 5px; font-weight: bold;">${codigoActual}</div>
             </div>
         `;
     }
 }
 
-// Copiar código al hacer clic
 codigoCupon.addEventListener('click', () => {
     navigator.clipboard.writeText(codigoActual).then(() => {
         codigoCupon.classList.add('copiado');
@@ -720,14 +790,38 @@ document.getElementById('btnValidar').addEventListener('click', () => {
     const codigo = codigoCupon.textContent;
 
     const msgUsuario = encodeURIComponent(
-        `🎉 *FELICIDADES* 🎉\n\n🏆 Ganaste: *${premioSeleccionado.texto}*\n🏪 Comercio: *${premioSeleccionado.comercio}*\n📝 ${premioSeleccionado.descripcion}\n\n📋 Código: *${codigo}*\n\n💡 *Cómo canjear:*\n1. Presentá este mensaje o el código\n2. Visitá el comercio indicado\n3. ¡Disfrutá tu premio!\n\n⚠️ *Válido por 7 días*\n\n¡Gracias por jugar! 🎰`
+        `🎉 *FELICIDADES* 🎉\n\n` +
+        `🏆 **Premio N° ${premioSeleccionado.numero}**\n` +
+        `🎁 Ganaste: *${premioSeleccionado.texto}*\n` +
+        `${premioSeleccionado.icono} Comercio: *${premioSeleccionado.comercio}*\n` +
+        `📍 Dirección: ${premioSeleccionado.direccion}\n\n` +
+        `📝 ${premioSeleccionado.descripcion}\n\n` +
+        `🔢 **Código único:** *${codigo}*\n\n` +
+        `💡 *Cómo canjear:*\n` +
+        `1. Presentá este mensaje o el código QR\n` +
+        `2. Visitá: ${premioSeleccionado.comercio}\n` +
+        `3. ¡Disfrutá tu premio!\n\n` +
+        `⏰ *Válido por 7 días*\n` +
+        `📅 Fecha: ${new Date().toLocaleDateString()}\n\n` +
+        `¡Gracias por jugar! 🎰`
     );
 
     window.open(`https://wa.me/${tel}?text=${msgUsuario}`, '_blank');
 
     if (!premioSeleccionado.sinPremio) {
         const msgComercio = encodeURIComponent(
-            `🔄 *NUEVO CUPÓN GENERADO*\n\n📱 Cliente: ${tel}\n🎁 Premio: ${premioSeleccionado.texto}\n📋 Código: *${codigo}*\n🏪 Comercio: ${premioSeleccionado.comercio}\n📝 ${premioSeleccionado.descripcion}\n⏰ Fecha: ${new Date().toLocaleDateString()}\n\n✅ *Para validar:*\nVerifica el código cuando el cliente canjee el premio`
+            `🔄 *NUEVO CUPÓN GENERADO*\n\n` +
+            `🏆 **Premio N° ${premioSeleccionado.numero}**\n` +
+            `📱 Cliente: ${tel}\n` +
+            `🎁 Premio: ${premioSeleccionado.texto}\n` +
+            `${premioSeleccionado.icono} Comercio: ${premioSeleccionado.comercio}\n` +
+            `🔢 Código: *${codigo}*\n` +
+            `📝 ${premioSeleccionado.descripcion}\n` +
+            `📅 Fecha: ${new Date().toLocaleDateString()}\n` +
+            `⏰ Hora: ${new Date().toLocaleTimeString()}\n\n` +
+            `✅ *Para validar:*\n` +
+            `Verifica el código cuando el cliente canjee el premio\n` +
+            `Código a validar: ${codigo}`
         );
         setTimeout(() => window.open(`https://wa.me/${premioSeleccionado.whatsapp}?text=${msgComercio}`, '_blank'), 1500);
     }

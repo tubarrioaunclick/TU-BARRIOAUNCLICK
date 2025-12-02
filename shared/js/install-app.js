@@ -38,7 +38,7 @@ function showManualInstallInstructions() {
                 <div class="modal-content">
                     <div class="modal-header bg-primary text-white">
                         <h5 class="modal-title">
-                            <i class="fas fa-mobile-alt me-2"></i>Instalar Tu Barrio A Un Clik
+                            <i class="fas fa-mobile-alt me-2"></i>Instalar Tu Barrio A Un Click
                         </h5>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>

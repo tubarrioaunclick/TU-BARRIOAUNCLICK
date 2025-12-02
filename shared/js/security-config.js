@@ -1,4 +1,4 @@
-// CONFIGURACIÓN DE SEGURIDAD CORREGIDA - Tu Barrio a un Clik
+// CONFIGURACIÓN DE SEGURIDAD CORREGIDA - Tu Barrio a un Click
 // ✅ Optimizada para: https://vicgom892.github.io/tubarrioaunclic/
 class SecurityConfig {
     constructor() {
@@ -303,7 +303,7 @@ class SecurityConfig {
 }
 
 // Inicialización
-console.log('🏠 Tu Barrio a un Clik - Cargando seguridad...');
+console.log('🏠 Tu Barrio a un Click - Cargando seguridad...');
 
 try {
     if (!window.appSecurity) {

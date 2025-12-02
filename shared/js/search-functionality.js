@@ -143,7 +143,7 @@
 
     // === FUNCIONES GLOBALES PARA BOTONES ===
     window.openWhatsApp = function (whatsapp) {
-      window.open(`https://wa.me/${whatsapp}?text=Hola%20desde%20Tu%20Barrio%20a%20un%20Clik`, '_blank');
+      window.open(`https://wa.me/${whatsapp}?text=Hola%20desde%20Tu%20Barrio%20a%20un%20Click`, '_blank');
     };
 
     window.openWebsite = function (url) {

@@ -373,7 +373,7 @@ Nuevo mensaje de contacto 📧
 ${questions.length > 0 ? `*Respuestas:*\n${questions.map(q => `• ${q.question}: ${q.answer}`).join('\n')}` : ''}
 
 ---
-*Enviado desde:* Tu Barrio a un Clik - Castelar
+*Enviado desde:* Tu Barrio a un Click - Castelar
 *Fecha:* ${new Date().toLocaleString('es-AR')}
 *Navegador:* ${navigator.userAgent.split(' ')[0]}
     `.trim();

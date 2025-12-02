@@ -210,7 +210,7 @@ function updateModalButtons(negocio, isOpen) {
     // WhatsApp
     const modalWhatsapp = document.getElementById('modalWhatsapp');
     if (modalWhatsapp) {
-        modalWhatsapp.href = `https://wa.me/${negocio.whatsapp}?text=Hola%20${encodeURIComponent(negocio.nombre)}%20desde%20BarrioClik`;
+        modalWhatsapp.href = `https://wa.me/${negocio.whatsapp}?text=Hola%20${encodeURIComponent(negocio.nombre)}%20desde%20BarrioClick`;
         modalWhatsapp.classList.toggle('disabled', !isOpen);
         modalWhatsapp.style.opacity = isOpen ? '1' : '0.5';
     }
@@ -1972,7 +1972,7 @@ document.getElementById('businessModal')?.addEventListener('show.bs.modal', func
 
     // Funciones globales para botones del modal
     window.openWhatsApp = function (whatsapp) {
-      window.open(`https://wa.me/${whatsapp}?text=Hola%20desde%20Tu%20Barrio%20a%20un%20Clik`, '_blank');
+      window.open(`https://wa.me/${whatsapp}?text=Hola%20desde%20Tu%20Barrio%20a%20un%20Click`, '_blank');
     };
     window.openWebsite = function (url) {
       if (url && url !== '#') window.open(url, '_blank');

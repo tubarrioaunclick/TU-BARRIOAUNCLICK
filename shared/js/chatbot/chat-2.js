@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
         /empezar|comenzar|inicio/i
       ],
       responses: [
-        "¡Hola! 👋 Soy tu asistente inteligente de *Tu Barrio A Un Clik*. ¡Estoy aquí para ayudarte a descubrir todo lo que tu barrio tiene para ofrecer!",
+        "¡Hola! 👋 Soy tu asistente inteligente de *Tu Barrio A Un Click*. ¡Estoy aquí para ayudarte a descubrir todo lo que tu barrio tiene para ofrecer!",
         "¡Hola! 😊 Me alegra verte. Tengo información actualizada de comercios, ofertas y servicios en tu zona. ¿En qué te puedo ayudar hoy?",
         "¡Buen día! 🌟 Soy tu guía virtual del barrio. Puedo mostrarte comercios, ofertas especiales y conectarte con emprendedores locales."
       ]
@@ -666,7 +666,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (welcomeMessage) {
         chatBody.appendChild(welcomeMessage);
       } else {
-        addMessage('¡Hola! 👋 Soy tu asistente inteligente de *Tu Barrio A Un Clik*. ¿En qué puedo ayudarte?', 'bot');
+        addMessage('¡Hola! 👋 Soy tu asistente inteligente de *Tu Barrio A Un Click*. ¿En qué puedo ayudarte?', 'bot');
       }
       
       addMessage('🗑️ **Historial limpiado**\n\nTodas las búsquedas anteriores han sido eliminadas. ¿En qué puedo ayudarte ahora?', 'bot');
@@ -1065,7 +1065,7 @@ document.addEventListener('DOMContentLoaded', function() {
           nombre: 'Descuento especial',
           categoria: 'General',
           descuento: '10% OFF',
-          detalle: 'Acércate al local y menciona que viniste desde Tu Barrio A Un Clik',
+          detalle: 'Acércate al local y menciona que viniste desde Tu Barrio A Un Click',
           imagen: 'img/placeholder-oferta.jpg',
           web: null,
           instagram: null,
@@ -1081,7 +1081,7 @@ document.addEventListener('DOMContentLoaded', function() {
         nombre: 'Descuento especial',
         categoria: 'General',
         descuento: '10% OFF',
-        detalle: 'Acércate al local y menciona que viniste desde Tu Barrio A Un Clik',
+        detalle: 'Acércate al local y menciona que viniste desde Tu Barrio A Un Click',
         imagen: 'img/placeholder-oferta.jpg',
         web: null,
         instagram: null,
@@ -1851,7 +1851,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     setTimeout(() => {
       if (negociosData.length > 0) {
-        addMessage(`¡Hola! 👋 Soy tu asistente inteligente de *Tu Barrio A Un Clik*. \n\nTengo información de **${negociosData.length} comercios** y **${ofertasData.length} ofertas** para mostrarte. ¿En qué te puedo ayudar hoy?`, 'bot');
+        addMessage(`¡Hola! 👋 Soy tu asistente inteligente de *Tu Barrio A Un Click*. \n\nTengo información de **${negociosData.length} comercios** y **${ofertasData.length} ofertas** para mostrarte. ¿En qué te puedo ayudar hoy?`, 'bot');
         
         const quickReplies = createEnhancedQuickReplies();
         chatBody.appendChild(quickReplies);

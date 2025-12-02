@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Inscripción - Tu Barrio A Un Click</title>
+    <link rel="canonical" href="https://www.tubarrioaunClick.com/" />
+
+
+  <link rel="icon" href="../shared/img/icon-192x192.webp" type="image/webp" sizes="192x192">
+  <link rel="apple-touch-icon" href="../shared/img/icon-192x192.webp">
     <style>
         /* Estilos para pantalla (muestra solo el primero) */
         @media screen {
@@ -487,8 +492,8 @@
     <!-- Información de contacto -->
     <div class="contacto-info no-print">
         <h3>📞 Contacto Directo</h3>
-        <p><strong>WhatsApp:</strong> <a href="https://wa.me/5491155555555" class="whatsapp-link" target="_blank">+54 9 11 5555-5555</a></p>
-        <p><strong>Email:</strong> <a href="mailto:contacto@tubarrioaclick.com" class="email-link">contacto@tubarrioaclick.com</a></p>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/5491157194796" class="whatsapp-link" target="_blank">+54 9 11 5719-4796</a></p>
+        <p><strong>Email:</strong> <a href="mailto:tubarrioaunclick@gmail.com" class="email-link">tubarrioaunclick@gmail.com</a></p>
         <p><small>¿Tenés dudas? Contactanos directamente</small></p>
     </div>
 
@@ -570,10 +575,7 @@
                             <option value="castelar">Castelar</option>
                             <option value="ituzaingo">Ituzaingó</option>
                             <option value="moron">Morón</option>
-                            <option value="ciudadela">Ciudadela</option>
                             <option value="merlo">Merlo</option>
-                            <option value="haedo">Haedo</option>
-                            <option value="ramos">Ramos Mejía</option>
                         </select>
                     </div>
                 </div>
@@ -660,7 +662,7 @@
                     <i class="fas fa-envelope"></i> Email
                 </button>
                 
-                <a href="https://wa.me/5491155555555?text=Hola,%20me%20interesa%20inscribir%20mi%20comercio%20en%20Tu%20Barrio%20A%20Un%20Click" 
+                <a href="https://wa.me/5491157194796?text=Hola,%20me%20interesa%20inscribir%20mi%20comercio%20en%20Tu%20Barrio%20A%20Un%20Click" 
                    class="btn btn-contacto" target="_blank">
                     <i class="fas fa-comments"></i> Contactar Directamente
                 </a>
@@ -812,7 +814,7 @@
 
 _Enviado el ${new Date().toLocaleDateString('es-AR')} a las ${new Date().toLocaleTimeString('es-AR')}_`;
 
-            const url = `https://wa.me/5491155555555?text=${encodeURIComponent(mensaje)}`;
+            const url = `https://wa.me/5491157194796?text=${encodeURIComponent(mensaje)}`;
             window.open(url, '_blank');
             mostrarMensajeExito();
         }
@@ -858,7 +860,7 @@ PLAN SELECCIONADO: ${datos.plan}
 ---
 Enviado el: ${new Date().toLocaleDateString('es-AR')} a las ${new Date().toLocaleTimeString('es-AR')}`;
 
-            const url = `mailto:contacto@tubarrioaclick.com?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
+            const url = `mailto:tubarrioaunclick@gmail.com?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
             window.location.href = url;
             mostrarMensajeExito();
         }
@@ -884,15 +886,15 @@ Enviado el: ${new Date().toLocaleDateString('es-AR')} a las ${new Date().toLocal
 
         // Actualizar contactos reales
         function actualizarContactos() {
-            const tuWhatsApp = '5491155555555'; // REEMPLAZA con tu número
-            const tuEmail = 'contacto@tubarrioaclick.com'; // REEMPLAZA con tu email
+            const tuWhatsApp = '5491157194796'; // REEMPLAZA con tu número
+            const tuEmail = 'tubarrioaunclick@gmail.com'; // REEMPLAZA con tu email
             
             document.querySelectorAll('[href*="wa.me"]').forEach(link => {
-                link.href = link.href.replace('5491155555555', tuWhatsApp);
+                link.href = link.href.replace('5491157194796', tuWhatsApp);
             });
             
             document.querySelectorAll('[href^="mailto:"]').forEach(link => {
-                link.href = link.href.replace('contacto@tubarrioaclick.com', tuEmail);
+                link.href = link.href.replace('tubarrioaunclick@gmail.com', tuEmail);
             });
         }
 

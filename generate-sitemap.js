@@ -2,7 +2,7 @@
 const fs = require('fs');
 
 // CONFIGURACIÓN - EDITA ESTO CUANDO AGREGues LOCALIDADES
-const baseUrl = 'https://www.tubarrioaunclik.com';
+const baseUrl = 'https://www.tubarrioaunClick.com';
 const localidades = [
     'castelar', 'ituzaingo', 'moron', 
     'merlo'
