@@ -3,134 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <script src="./shared/js/security-config.js" defer></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu Barrio A Un Click - Seleccioná tu Localidad</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Tu Barrio A Un Click - Conectando Vecinos y Comercios</title>
     
-    <!-- Meta Tags SEO Mejorados -->
-    <meta name="description" content="Seleccioná tu localidad para acceder a comercios, servicios y comunidad local con Tu Barrio A Un Click">
-    <meta name="keywords" content="barrio, comercios, localidad, castelar, ituzaingo, moron, servicios locales, comercios cercanos, economía local">
+    <!-- SEO -->
+    <meta name="description" content="App para descubrir comercios y servicios locales en Castelar, Ituzaingó, Morón y Merlo. Conectá con tu comunidad.">
+    <meta name="keywords" content="barrio, comercios locales, castelar, ituzaingo, moron, merlo, servicios, app comunidad">
     <meta name="author" content="Tu Barrio A Un Click">
-    <meta name="robots" content="index, follow">
     
-    <!-- Preload de Recursos Críticos -->
-    <link rel="preload" href="https://tubarrioaunclick.com/shared/img/icon-192x192.webp" as="image" type="image/png">
-    <link rel="preload" href="./shared/js/splash.js" as="script">
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style" crossorigin="anonymous">
-    
-    <!-- Preconnect para CDNs -->
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    
-    <!-- Estilos de Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous">
-    
-    <!-- PWA Manifest -->
+    <!-- PWA -->
     <link rel="manifest" href="manifest-tubarrio.json" crossorigin="use-credentials">
-    <script src="./shared/js/config.js"></script>
-
-    <!-- Iconos y Manifest -->
-    <link rel="icon" href="https://tubarrioaunclick.com/shared/img/icon-abeja-sola.png" type="image/png" sizes="32x32" />
-    <link rel="icon" href="https://tubarrioaunclick.com/shared/img/icon-192x192.webp" type="image/png" sizes="192x192" />
-    <link rel="apple-touch-icon" href="https://tubarrioaunclick.com/shared/img/icon-192x192.webp" />
-    <link rel="mask-icon" href="https://tubarrioaunclick.com/shared/img/icon-abeja-sola.png" color="#e1306c">
-
-    <!-- Meta Tags PWA Mejorados -->
-    <meta name="apple-mobile-web-app-title" content="TuBarrioSelector">
+    <link rel="icon" href="https://tubarrioaunclick.com/shared/img/icon-512x512.webp" type="image/webp">
+    <meta name="theme-color" content="#0a0a0f">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-    <!-- ICONO PARA GOOGLE SEARCH - AGREGAR ESTO -->
-    <link rel="icon" href="https://tubarrioaunclick.com/shared/img/icon-192x192.png" type="image/png" sizes="192x192">
-    <link rel="apple-touch-icon" href="https://tubarrioaunclick.com/shared/img/icon-192x192.png">
     
-    <!-- META TAG ESPECÍFICO PARA GOOGLE -->
-    <meta name="google-site-verification" content="tu-codigo-de-verificacion">
-    
-    <meta name="application-name" content="TuBarrioSelector">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="#764ba2">
-    <meta name="msapplication-TileColor" content="#764ba2">
-    <meta name="msapplication-TileImage" content="./shared/img/icon-192x192.png">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-   <!-- Schema.org Structured Data CORREGIDO -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "name": "Tu Barrio A Un Click",
-  "description": "Plataforma para descubrir comercios y servicios locales en Castelar, Ituzaingó, Morón y Merlo",
-  "url": "https://tubarrioaunclick.com",
-  "applicationCategory": "BusinessApplication",
-  "operatingSystem": "Any",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "ARS"
-  },
-  "author": {
-    "@type": "Organization",
-    "name": "Tu Barrio A Un Click",
-    "url": "https://tubarrioaunclick.com"
-  },
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": {
-      "@type": "EntryPoint",
-      "urlTemplate": "https://tubarrioaunclick.com/{search_term_string}"
-    },
-    "query-input": "required name=search_term_string"
-  },
-  "screenshot": "https://tubarrioaunclick.com/shared/img/icon-192x192.png",
-  "browserRequirements": "Requires JavaScript. Requires HTML5.",
-  "sameAs": []
-}
-</script>
-<!-- Schema adicional para LocalBusiness -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization", 
-  "name": "Tu Barrio A Un Click",
-  "description": "Plataforma de comercios y servicios locales en el Oeste del Gran Buenos Aires",
-  "url": "https://tubarrioaunclick.com",
-  "logo": "https://tubarrioaunclick.com/shared/img/icon-192x192.png",
-  "address": {
-    "@type": "PostalAddress",
-    "addressRegion": "Buenos Aires",
-    "addressCountry": "AR"
-  },
-  "areaServed": ["Castelar", "Ituzaingó", "Morón", "Merlo"],
-  "serviceArea": {
-    "@type": "GeoCircle",
-    "geoMidpoint": {
-      "@type": "GeoCoordinates",
-      "latitude": -34.6489,
-      "longitude": -58.6475
-    },
-    "geoRadius": "15000"
-  }
-}
-</script>
     <style>
+        /* ============================================
+           VARIABLES Y RESET
+        ============================================ */
         :root {
-            --primary: #1e3a8a;
-            --secondary: #0ea5e9;
+            --primary: #0a0a0f;
+            --secondary: #111122;
             --accent: #00f5ff;
-            --metal-light: #c0c0c0;
-            --metal-dark: #808080;
-            --dark-bg: #0f172a;
-            --card-bg: #1e293b;
-            --text-light: #f1f5f9;
-            --text-muted: #94a3b8;
-            --location: #10b981;
-            --success: #10b981;
-            --warning: #f59e0b;
-            --error: #ef4444;
-            --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.1);
-            --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.2);
-            --border-color: #475569;
+            --neon-pink: #ff00ff;
+            --neon-green: #00ff9d;
+            --glow-soft: 0 0 20px rgba(0, 245, 255, 0.3);
+            --glow-medium: 0 0 40px rgba(0, 245, 255, 0.5);
+            --glow-strong: 0 0 60px rgba(0, 245, 255, 0.7);
+            --font-heading: 'Orbitron', monospace;
+            --font-body: 'Exo 2', sans-serif;
+            --shadow-deep: 0 10px 40px rgba(0, 0, 0, 0.5);
         }
 
         * {
@@ -138,1909 +44,1525 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
-        strong{
-            color: red;
-            font-size: 2rem;
-        }
-        /* Mejorar rendimiento de animaciones */
-        .particle, .app-logo, .location-btn, .detect-btn, .install-btn, .share-btn {
-            will-change: transform, opacity;
-        }
 
-        /* Reducir movimiento para usuarios sensibles */
-        @media (prefers-reduced-motion: reduce) {
-            *,
-            *::before,
-            *::after {
-                animation-duration: 0.01ms !important;
-                animation-iteration-count: 1 !important;
-                transition-duration: 0.01ms !important;
-                scroll-behavior: auto !important;
-            }
+        html {
+            scroll-behavior: smooth;
+            background: var(--primary);
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #0c0f1d 0%, #1a1f35 100%);
-            color: var(--text-light);
+            font-family: var(--font-body);
+            background: var(--primary);
+            color: white;
             min-height: 100vh;
             overflow-x: hidden;
             line-height: 1.6;
         }
 
-         /* Splash Screen Tecnológico */
-    .splash-screen {
-        position: fixed;
-        /*top: 50px;*/
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(135deg, #121212 0%, #1a1a2e 50%, #16213e 100%);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        z-index: 100000;
-        opacity: 1;
-        transition: opacity 0.8s ease;
-        overflow: hidden;
-    }
-    
-    .splash-screen.fade-out {
-        opacity: 0;
-        pointer-events: none;
-    }
-    
-    /* Fondo de partículas animadas */
-    .splash-particles {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-    }
-    
-    .particle {
-        position: absolute;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.1);
-        pointer-events: none;
-        animation: float 6s infinite ease-in-out;
-    }
-    
-    /* Grid de fondo */
-    .splash-grid {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: 
-            linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-        background-size: 40px 40px;
-        z-index: 2;
-        opacity: 0.3;
-    }
-    
-    /* Logo con efecto de brillo */
-    .splash-logo {
-        width: 320px;
-        height: 320px;
-        border-radius: 50%;
-        background: linear-gradient(135deg, #ff6200 0%, #ff9e2c 100%);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 30px;
-        z-index: 3;
-        box-shadow: 0 20px 60px rgba(255, 98, 0, 0.4);
-        position: relative;
-        overflow: hidden;
-        animation: pulseGlow 2s infinite alternate;
-        border: 4px solid rgba(255, 255, 255, 0.2);
-    }
-    
-    .splash-logo::before {
-        content: '';
-        position: absolute;
-        top: -50%;
-        left: -50%;
-        width: 200%;
-        height: 200%;
-        background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
-        opacity: 0;
-        animation: shine 3s infinite;
-    }
-    
-    .logo-icon {
-        font-size: 80px;
-        color: white;
-        z-index: 1;
-        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-        width: 230px;
-        height: 230px;
-    }
-    
-    .splash-text {
-        color: #f8f9fa !important;
-        font-size: 2rem;
-        font-weight: 600;
-        margin-bottom: 30px;
-        text-align: center;
-        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-        z-index: 3;
-        opacity: 0;
-        transform: translateY(20px);
-        animation: fadeInUp 1s ease forwards 0.5s;
-    }
-    
-    .loading-bar-container {
-        width: 200px;
-        height: 6px;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 3px;
-        overflow: hidden;
-        position: relative;
-        z-index: 3;
-        margin-top: 20px;
-    }
-    
-    .loading-bar {
-        width: 0%;
-        height: 100%;
-        background: linear-gradient(90deg, #ff6200, #ff9e2c);
-        border-radius: 3px;
-        transition: width 0.3s ease;
-        position: relative;
-    }
-    
-    .loading-bar::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(90deg, 
-            transparent, 
-            rgba(255, 255, 255, 0.4), 
-            transparent);
-        animation: shimmer 1.5s infinite;
-    }
-    
-    .loading-text {
-        color:#f8f9fa;
-        font-size: 0.9rem;
-        margin-top: 10px;
-        opacity: 0;
-        transform: translateY(10px);
-        animation: fadeInUp 0.5s ease forwards 1.2s;
-        z-index: 3;
-    }
-    
-    .skip-btn {
-        margin-top: 30px;
-        background: rgba(255, 255, 255, 0.1);
-        color: white;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        padding: 10px 20px;
-        border-radius: 30px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        backdrop-filter: blur(10px);
-        font-weight: 500;
-        letter-spacing: 0.5px;
-        z-index: 3;
-        opacity: 0;
-        transform: translateY(20px);
-        animation: fadeInUp 0.5s ease forwards 1.5s;
-    }
-    
-    .skip-btn:hover {
-        background: rgba(255, 255, 255, 0.2);
-        transform: translateY(-3px);
-        box-shadow: 0 8px 25px rgba(255, 98, 0, 0.3);
-    }
-    
-    /* Animaciones */
-    @keyframes pulseGlow {
-        0% {
-            box-shadow: 0 20px 60px rgba(255, 98, 0, 0.4);
-            transform: scale(1);
-        }
-        100% {
-            box-shadow: 0 20px 60px rgba(255, 98, 0, 0.6);
-            transform: scale(1.05);
-        }
-    }
-    
-    @keyframes shine {
-        0% {
-            opacity: 0;
-            transform: translateX(-50%) translateY(-50%) rotate(0deg);
-        }
-        50% {
-            opacity: 1;
-        }
-        100% {
-            opacity: 0;
-            transform: translateX(50%) translateY(50%) rotate(180deg);
-        }
-    }
-    
-    @keyframes shimmer {
-        0% {
-            transform: translateX(-100%);
-        }
-        100% {
-            transform: translateX(100%);
-        }
-    }
-    
-    @keyframes float {
-        0%, 100% {
-            transform: translate(0, 0);
-        }
-        25% {
-            transform: translate(10px, 15px);
-        }
-        50% {
-            transform: translate(-10px, 5px);
-        }
-        75% {
-            transform: translate(5px, -10px);
-        }
-    }
-    
-    @keyframes fadeInUp {
-        from {
-            opacity: 0;
-            transform: translateY(20px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-    
-    /* Responsive */
-    @media (max-width: 768px) {
-        .splash-logo {
-            width: 280px;
-            height: 280px;
-        }
-        
-        .splash-text {
-            font-size: 1.6rem;
-        }
-        
-        .loading-bar-container {
-            width: 160px;
-        }
-    }
-    
-    @media (max-width: 576px) {
-        .splash-logo {
-            width: 250px;
-            height: 250px;
-        }
-        
-        .splash-text {
-            font-size: 1.4rem;
-        }
-        
-        .loading-bar-container {
-            width: 140px;
-        }
-        
-        .skip-btn {
-            padding: 8px 16px;
-            font-size: 0.8rem;
-        }
-    }
-
-
-
-        /* Alto contraste para mejor accesibilidad */
-        @media (prefers-contrast: high) {
-            :root {
-                --text-light: #ffffff;
-                --text-muted: #e5e5e5;
-                --border-color: #ffffff;
-            }
-            
-            body {
-                background: #000000;
-            }
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        /* Header con efecto tecnológico */
-        header[role="banner"] {
-            background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(15, 23, 42, 0.9) 100%);
-            box-shadow: var(--shadow-md);
-            margin-bottom: 40px;
-            border: 1px solid var(--border-color);
-            position: relative;
-            border-radius: 20px;
-            overflow: hidden;
-            backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
-        }
-
-        header[role="banner"]::before {
-            content: '';
-            position: absolute;
+        /* ============================================
+           SPLASH SCREEN
+        ============================================ */
+        .splash-screen {
+            position: fixed;
             top: 0;
             left: 0;
-            right: 0;
-            height: 2px;
-            background: linear-gradient(90deg, transparent, var(--accent), transparent);
-            animation: scanline 3s linear infinite;
-        }
-
-        @keyframes scanline {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(100%); }
-        }
-
-        .header-content {
-            text-align: center;
-            padding: 40px 20px;
-            position: relative;
-            z-index: 2;
-        }
-
-        .app-logo {
-            width: 120px;
-            height: 120px;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #0a0a0f 0%, #111122 100%);
             display: flex;
-            align-items: center;
+            flex-direction: column;
             justify-content: center;
-            margin: 0 auto 25px;
-            box-shadow: 0 0 30px rgba(14, 165, 233, 0.4);
-            border: 3px solid var(--accent);
-            animation: pulse 2s infinite;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.8s ease, visibility 0.8s ease;
+        }
+
+        .splash-screen.hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        .splash-logo {
+            width: 180px;
+            height: 180px;
+            margin-bottom: 30px;
             position: relative;
-            overflow: hidden;
-            transition: all 0.5s ease;
         }
 
-        .app-logo::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
-            transform: rotate(45deg);
-            animation: shine 3s infinite;
-        }
-
-        @keyframes shine {
-            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
-            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
-        }
-
-        .app-logo img {
+        .splash-logo img {
             width: 100%;
             height: 100%;
             object-fit: contain;
-            filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
-            transition: all 0.5s ease;
+            filter: drop-shadow(0 0 30px var(--accent));
+            animation: logoFloat 3s ease-in-out infinite;
         }
 
-        @keyframes pulse {
-            0% {
-                box-shadow: 0 0 0 0 rgba(0, 245, 255, 0.4);
-            }
-            70% {
-                box-shadow: 0 0 0 15px rgba(0, 245, 255, 0);
-            }
-            100% {
-                box-shadow: 0 0 0 0 rgba(0, 245, 255, 0);
-            }
-        }
-
-        .header-content h1 {
-            font-size: 2.8rem;
-            font-weight: 800;
-            color: var(--accent);
-            margin-bottom: 15px;
-            text-shadow: 0 0 10px rgba(0, 245, 255, 0.3);
-            background: linear-gradient(90deg, var(--primary), var(--accent));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            position: relative;
-            transition: all 0.5s ease;
-        }
-
-        .header-content h1::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-            height: 3px;
-            background: linear-gradient(90deg, transparent, var(--accent), transparent);
-        }
-
-        .header-content p {
-            font-size: 1.3rem;
-            color: var(--text-muted);
-            line-height: 1.6;
-            max-width: 700px;
-            margin: 0 auto;
-            transition: all 0.5s ease;
-        }
-
-        /* Detección de ubicación con efecto metálico */
-        .location-detection {
-            background: linear-gradient(135deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.8) 100%);
-            border-radius: 16px;
-            padding: 30px;
+        .splash-text {
+            font-family: var(--font-heading);
+            font-size: 2.5rem;
             text-align: center;
-            box-shadow: var(--shadow-md);
-            border: 1px solid var(--border-color);
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            background: linear-gradient(90deg, var(--accent), var(--neon-pink), var(--neon-green));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% auto;
+            animation: gradientShift 3s linear infinite;
+        }
+
+        .loading-container {
+            width: 300px;
+            margin-bottom: 30px;
+        }
+
+        .loading-bar {
+            width: 100%;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .loading-progress {
+            width: 0%;
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent), var(--neon-pink));
+            transition: width 0.3s ease;
+        }
+
+        /* ============================================
+           HEADER PRINCIPAL
+        ============================================ */
+        .main-header {
+            background: linear-gradient(145deg, #1a1a2e 0%, #16213e 100%);
+            border-radius: 0 0 30px 30px;
+            padding: 40px 20px;
+            text-align: center;
             margin-bottom: 40px;
-            max-width: 800px;
-            margin: 0 auto 40px auto;
             position: relative;
             overflow: hidden;
-            backdrop-filter: blur(10px);
+            border-bottom: 2px solid var(--accent);
         }
 
-        .location-detection::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(192, 192, 192, 0.05) 0%, rgba(128, 128, 128, 0.05) 100%);
-            z-index: -1;
-        }
-
-        .location-detection h3 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: var(--location);
+        .header-logo {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 20px;
+            background: rgba(0, 245, 255, 0.1);
+            border-radius: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            border: 2px solid var(--accent);
+            box-shadow: var(--glow-soft);
         }
 
-        .location-detection p {
-            color: var(--text-muted);
-            line-height: 1.6;
-            margin-bottom: 25px;
+        .header-logo img {
+            width: 60px;
+            height: 60px;
+            filter: drop-shadow(0 0 10px var(--accent));
         }
 
-        .detect-btn {
-            background: linear-gradient(135deg, var(--metal-light), var(--metal-dark));
-            color: #1a1a1a;
-            border: none;
-            border-radius: 12px;
-            padding: 14px 32px;
-            font-size: 1.1rem;
-            font-weight: 700;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(192, 192, 192, 0.3);
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            position: relative;
-            overflow: hidden;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .detect-btn:disabled {
-            opacity: 0.6;
-            cursor: not-allowed;
-            transform: none !important;
-        }
-
-        .detect-btn::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
-            transition: left 0.5s;
-        }
-
-        .detect-btn:hover:not(:disabled) {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(192, 192, 192, 0.5);
-            background: linear-gradient(135deg, var(--metal-dark), var(--metal-light));
-        }
-
-        .detect-btn:hover:not(:disabled)::before {
-            left: 100%;
-        }
-
-        .detect-btn:active:not(:disabled) {
-            transform: translateY(0);
-        }
-
-        .detect-btn i {
-            font-size: 18px;
-        }
-
-        /* Focus states para accesibilidad */
-        .detect-btn:focus-visible,
-        .location-btn:focus-visible,
-        .install-btn:focus-visible,
-        .share-btn:focus-visible,
-        .btn:focus-visible {
-            outline: 3px solid var(--accent);
-            outline-offset: 2px;
-        }
-
-        /* Sección de localidades */
-        .locations-section {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .locations-section h2 {
+        .header-title {
+            font-family: var(--font-heading);
             font-size: 2.2rem;
-            font-weight: 800;
-            margin-bottom: 35px;
-            color: var(--text-light);
-            background: linear-gradient(90deg, var(--secondary), var(--accent));
+            margin-bottom: 15px;
+            background: linear-gradient(90deg, var(--accent), var(--neon-pink));
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
             background-clip: text;
-            position: relative;
-            display: inline-block;
+            -webkit-text-fill-color: transparent;
         }
 
-        .locations-section h2::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background: linear-gradient(90deg, transparent, var(--accent), transparent);
-        }
-
-        .locations-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 25px;
-            max-width: 900px;
+        .header-subtitle {
+            font-size: 1.1rem;
+            opacity: 0.8;
+            max-width: 600px;
             margin: 0 auto;
         }
 
-        /* Botones de localidad con efecto metálico */
-        .location-btn {
-            background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(15, 23, 42, 0.9) 100%);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            padding: 25px 20px;
-            font-size: 1.2rem;
-            font-weight: 700;
-            color: var(--text-light);
-            cursor: pointer;
-            transition: all 0.3s ease;
+        /* ============================================
+           SECCIÓN UBICACIÓN - MEJORADA CON PERMISOS
+        ============================================ */
+        .location-section {
+            background: rgba(30, 30, 46, 0.6);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 0 20px 40px;
             text-align: center;
-            box-shadow: var(--shadow-md);
-            text-decoration: none;
-            display: block;
-            position: relative;
-            overflow: hidden;
-            backdrop-filter: blur(5px);
-        }
-
-        .location-btn::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(192, 192, 192, 0.1) 0%, rgba(128, 128, 128, 0.1) 100%);
-            z-index: -1;
-        }
-
-        .location-btn::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(14, 165, 233, 0.2), transparent);
-            transition: left 0.5s;
-        }
-
-        .location-btn:hover {
-            background: linear-gradient(135deg, rgba(30, 58, 138, 0.9), rgba(14, 165, 233, 0.9));
-            color: white;
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(30, 58, 138, 0.6);
-            border-color: var(--secondary);
-        }
-
-        .location-btn:hover::after {
-            left: 100%;
-        }
-
-        .location-btn i {
-            display: block;
-            margin-bottom: 12px;
-            font-size: 28px;
-            color: var(--location);
-            transition: all 0.3s ease;
-        }
-
-        .location-btn:hover i {
-            color: var(--accent);
-            text-shadow: 0 0 10px rgba(0, 245, 255, 0.5);
-            transform: scale(1.2);
-        }
-
-        /* Modal de sugerencia */
-        .location-suggestion {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: linear-gradient(135deg, rgba(30, 41, 59, 0.95) 0%, rgba(15, 23, 42, 0.95) 100%);
-            border-radius: 16px;
-            padding: 35px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-            z-index: 1000;
-            max-width: 500px;
-            width: 90%;
-            text-align: center;
-            display: none;
-            border: 1px solid var(--border-color);
+            border: 1px solid rgba(0, 245, 255, 0.3);
             backdrop-filter: blur(10px);
         }
 
-        .location-suggestion::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(192, 192, 192, 0.05) 0%, rgba(128, 128, 128, 0.05) 100%);
-            z-index: -1;
-            border-radius: 16px;
-        }
-
-        .location-suggestion.show {
-            display: block;
-            animation: slideIn 0.5s ease;
-        }
-
-        @keyframes slideIn {
-            from {
-                opacity: 0;
-                transform: translate(-50%, -60%);
-            }
-            to {
-                opacity: 1;
-                transform: translate(-50%, -50%);
-            }
-        }
-
-        .location-suggestion h3 {
-            font-size: 1.6rem;
-            font-weight: 700;
+        .location-title {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
             margin-bottom: 20px;
             color: var(--accent);
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
-        }
-
-        .location-suggestion p {
-            color: var(--text-muted);
-            margin-bottom: 25px;
-            line-height: 1.6;
-        }
-
-        .suggestion-btns {
-            display: flex;
             gap: 15px;
-            justify-content: center;
         }
 
-        .btn {
-            padding: 12px 24px;
-            border-radius: 8px;
+        .location-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .location-btn {
+            background: rgba(0, 245, 255, 0.1);
+            border: 2px solid var(--accent);
+            color: var(--accent);
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-family: var(--font-heading);
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .location-btn:hover:not(:disabled) {
+            background: var(--accent);
+            color: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: var(--glow-medium);
+        }
+
+        .location-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .location-btn.detect {
+            background: linear-gradient(135deg, var(--accent), var(--neon-pink));
+            color: white;
             border: none;
-            font-size: 1rem;
+        }
+
+        .location-status {
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .permission-info {
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(255, 215, 0, 0.1);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            border-radius: 10px;
+            font-size: 0.9rem;
+            color: #ffd700;
+        }
+
+        .permission-info i {
+            margin-right: 10px;
+        }
+
+        /* ============================================
+           LOCALIDADES
+        ============================================ */
+        .localidades-section {
+            padding: 0 20px 40px;
+        }
+
+        .section-title {
+            font-family: var(--font-heading);
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .localidades-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .localidad-card {
+            background: linear-gradient(145deg, #1a1a2e, #16213e);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(0, 245, 255, 0.2);
             position: relative;
             overflow: hidden;
         }
 
-        .btn:disabled {
-            opacity: 0.6;
-            cursor: not-allowed;
-            transform: none !important;
+        .localidad-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent);
+            box-shadow: var(--glow-strong);
         }
 
-        .btn::before {
+        .localidad-card::before {
             content: '';
             position: absolute;
             top: 0;
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-            transition: left 0.5s;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transition: left 0.6s;
         }
 
-        .btn:hover:not(:disabled)::before {
+        .localidad-card:hover::before {
             left: 100%;
         }
 
-        .btn-primary {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-        }
-
-        .btn-primary:hover:not(:disabled) {
-            background: linear-gradient(135deg, var(--secondary), var(--accent));
-            transform: translateY(-2px);
-        }
-
-        .btn-secondary {
-            background: linear-gradient(135deg, var(--metal-light), var(--metal-dark));
-            color: #1a1a1a;
-            border: 1px solid var(--border-color);
-        }
-
-        .btn-secondary:hover:not(:disabled) {
-            background: linear-gradient(135deg, var(--metal-dark), var(--metal-light));
-            transform: translateY(-2px);
-        }
-
-        .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(15, 23, 42, 0.8);
-            z-index: 999;
-            display: none;
-            backdrop-filter: blur(5px);
-        }
-
-        .overlay.show {
-            display: block;
-        }
-
-        footer[role="contentinfo"] {
-            text-align: center;
-            padding: 30px 0;
-            color: var(--text-muted);
-            font-size: 0.95rem;
-            border-top: 1px solid var(--border-color);
-            margin-top: 40px;
-        }
-
-        /* Efectos de partículas en el fondo */
-        .particles {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            pointer-events: none;
-        }
-
-        .particle {
-            position: absolute;
-            width: 2px;
-            height: 2px;
-            background: var(--accent);
+        .card-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(0, 245, 255, 0.1);
             border-radius: 50%;
-            opacity: 0.3;
-            animation: float 15s infinite linear;
-        }
-
-        @keyframes float {
-            0% {
-                transform: translateY(100vh) translateX(0);
-            }
-            100% {
-                transform: translateY(-100vh) translateX(100px);
-            }
-        }
-
-        /* Sección de Instalar App */
-        .install-app-section {
-            margin: 40px auto;
-            max-width: 800px;
-        }
-
-        .install-app-card {
-            background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(15, 23, 42, 0.9) 100%);
-            border-radius: 16px;
-            padding: 30px;
-            text-align: center;
-            box-shadow: var(--shadow-md);
-            border: 1px solid var(--border-color);
-            backdrop-filter: blur(10px);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .install-app-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(192, 192, 192, 0.05) 0%, rgba(128, 128, 128, 0.05) 100%);
-            z-index: -1;
-        }
-
-        .install-app-card h3 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: var(--accent);
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            margin: 0 auto 20px;
+            font-size: 1.8rem;
+            color: var(--accent);
+            border: 2px solid var(--accent);
         }
 
-        .install-app-card p {
-            color: var(--text-muted);
-            line-height: 1.6;
-            margin-bottom: 25px;
+        .card-title {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: var(--accent);
+        }
+
+        /* ============================================
+           INSTALACIÓN PWA
+        ============================================ */
+        .install-section {
+            background: linear-gradient(145deg, #16213e 0%, #0f3460 100%);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 0 20px 40px;
+            text-align: center;
+            border: 1px solid rgba(0, 245, 255, 0.3);
         }
 
         .install-btn {
-            background: linear-gradient(135deg, var(--success), #0d9667);
+            background: linear-gradient(135deg, var(--accent), var(--neon-pink));
             color: white;
             border: none;
-            border-radius: 12px;
-            padding: 14px 32px;
-            font-size: 1.1rem;
-            font-weight: 700;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .install-btn:disabled {
-            opacity: 0.6;
-            cursor: not-allowed;
-            transform: none !important;
-        }
-
-        .install-btn::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
-            transition: left 0.5s;
-        }
-
-        .install-btn:hover:not(:disabled) {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(16, 185, 129, 0.5);
-            background: linear-gradient(135deg, #0d9667, var(--success));
-        }
-
-        .install-btn:hover:not(:disabled)::before {
-            left: 100%;
-        }
-
-        .install-btn:active:not(:disabled) {
-            transform: translateY(0);
-        }
-
-        .install-btn i {
-            font-size: 18px;
-        }
-
-        .install-steps {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 30px;
-            gap: 15px;
-        }
-
-        .step {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
-            padding: 15px;
-            background: rgba(30, 41, 59, 0.5);
-            border-radius: 10px;
-            border: 1px solid var(--border-color);
-        }
-
-        .step i {
-            font-size: 1.5rem;
-            color: var(--accent);
-        }
-
-        .step span {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            text-align: center;
-            line-height: 1.4;
-        }
-
-        /* Sección de Compartir App */
-        .share-app-section {
-            margin: 40px auto;
-            max-width: 800px;
-        }
-
-        .share-app-card {
-            background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(15, 23, 42, 0.9) 100%);
-            border-radius: 16px;
-            padding: 30px;
-            text-align: center;
-            box-shadow: var(--shadow-md);
-            border: 1px solid var(--border-color);
-            backdrop-filter: blur(10px);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .share-app-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(192, 192, 192, 0.05) 0%, rgba(128, 128, 128, 0.05) 100%);
-            z-index: -1;
-        }
-
-        .share-app-card h3 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: var(--accent);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-        }
-
-        .share-app-card p {
-            color: var(--text-muted);
-            line-height: 1.6;
-            margin-bottom: 25px;
-        }
-
-        .share-buttons {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .share-btn {
-            padding: 12px 20px;
-            border: none;
-            border-radius: 10px;
+            padding: 18px 40px;
+            border-radius: 50px;
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
-            display: flex;
+            margin-top: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: inline-flex;
             align-items: center;
-            justify-content: center;
-            gap: 8px;
-            font-size: 0.95rem;
-            position: relative;
-            overflow: hidden;
+            gap: 15px;
         }
 
-        .share-btn:disabled {
-            opacity: 0.6;
+        .install-btn:hover:not(:disabled) {
+            transform: translateY(-5px);
+            box-shadow: var(--glow-strong);
+            letter-spacing: 3px;
+        }
+
+        .install-btn:disabled {
+            opacity: 0.7;
             cursor: not-allowed;
-            transform: none !important;
         }
 
-        .share-btn::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-            transition: left 0.5s;
+        .install-btn.installed {
+            background: linear-gradient(135deg, var(--neon-green), #00b894);
         }
 
-        .share-btn:hover:not(:disabled)::before {
-            left: 100%;
+        /* ============================================
+           RECOMENDACIÓN
+        ============================================ */
+        .share-section {
+            background: rgba(30, 30, 46, 0.6);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 0 20px 40px;
+            text-align: center;
+            border: 1px solid rgba(0, 245, 255, 0.3);
+            backdrop-filter: blur(10px);
         }
 
-        .share-btn:hover:not(:disabled) {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        .share-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        /* Colores específicos para cada plataforma */
-        .share-btn.whatsapp {
-            background: linear-gradient(135deg, #25D366, #128C7E);
+        .share-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid;
+            border-radius: 15px;
+            padding: 25px 15px;
+            font-family: var(--font-heading);
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
             color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .share-btn:hover {
+            transform: translateY(-5px);
+        }
+
+        .share-btn i {
+            font-size: 2rem;
+        }
+
+        .share-btn.whatsapp {
+            border-color: #25D366;
+            background: rgba(37, 211, 102, 0.1);
+        }
+        .share-btn.whatsapp:hover {
+            background: rgba(37, 211, 102, 0.2);
         }
 
         .share-btn.facebook {
-            background: linear-gradient(135deg, #1877F2, #0D5CB6);
-            color: white;
+            border-color: #1877F2;
+            background: rgba(24, 119, 242, 0.1);
         }
-
-        .share-btn.twitter {
-            background: linear-gradient(135deg, #1DA1F2, #0D8BD9);
-            color: white;
-        }
-
-        .share-btn.copy-link {
-            background: linear-gradient(135deg, var(--metal-light), var(--metal-dark));
-            color: #1a1a1a;
+        .share-btn.facebook:hover {
+            background: rgba(24, 119, 242, 0.2);
         }
 
         .share-btn.instagram {
-            background: linear-gradient(135deg, #E1306C, #C13584);
-            color: white;
+            border-color: #E4405F;
+            background: rgba(228, 64, 95, 0.1);
+        }
+        .share-btn.instagram:hover {
+            background: rgba(228, 64, 95, 0.2);
         }
 
-        /* Efectos hover específicos */
-        .share-btn.whatsapp:hover:not(:disabled) {
-            background: linear-gradient(135deg, #128C7E, #25D366);
+        .share-btn.copy {
+            border-color: var(--accent);
+            background: rgba(0, 245, 255, 0.1);
+        }
+        .share-btn.copy:hover {
+            background: rgba(0, 245, 255, 0.2);
         }
 
-        .share-btn.facebook:hover:not(:disabled) {
-            background: linear-gradient(135deg, #0D5CB6, #1877F2);
-        }
-
-        .share-btn.twitter:hover:not(:disabled) {
-            background: linear-gradient(135deg, #0D8BD9, #1DA1F2);
-        }
-
-        .share-btn.copy-link:hover:not(:disabled) {
-            background: linear-gradient(135deg, var(--metal-dark), var(--metal-light));
-        }
-
-        .share-btn.instagram:hover:not(:disabled) {
-            background: linear-gradient(135deg, #C13584, #E1306C);
-        }
-
-        /* Toast de notificación */
-        .share-toast {
+        /* ============================================
+           MODALES Y NOTIFICACIONES
+        ============================================ */
+        .modal-overlay {
             position: fixed;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%) translateY(100px);
-            background: var(--success);
-            color: white;
-            padding: 12px 24px;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-            z-index: 1001;
-            transition: transform 0.3s ease;
-            display: flex;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            display: none;
             align-items: center;
-            gap: 10px;
-            font-weight: 500;
+            justify-content: center;
+            z-index: 10000;
         }
 
-        .share-toast.show {
-            transform: translateX(-50%) translateY(0);
+        .modal-overlay.active {
+            display: flex;
+            animation: fadeIn 0.3s ease;
         }
 
-        /* Toast de error */
-        .error-toast {
-            position: fixed;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%) translateY(100px);
-            background: var(--error);
-            color: white;
-            padding: 12px 24px;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-            z-index: 1001;
-            transition: transform 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-weight: 500;
-            max-width: 90%;
+        .modal {
+            background: linear-gradient(145deg, #1a1a2e, #16213e);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 500px;
+            width: 90%;
             text-align: center;
+            border: 2px solid var(--accent);
+            box-shadow: var(--glow-strong);
+            animation: modalIn 0.3s ease;
         }
 
-        .error-toast.show {
+        .modal h3 {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--accent);
+        }
+
+        .modal p {
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .modal-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .modal-btn {
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            cursor: pointer;
+            border: 2px solid var(--accent);
+            background: transparent;
+            color: var(--accent);
+            transition: all 0.3s ease;
+        }
+
+        .modal-btn.primary {
+            background: var(--accent);
+            color: var(--primary);
+        }
+
+        .modal-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--glow-soft);
+        }
+
+        .toast {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            background: linear-gradient(145deg, #1a1a2e, #16213e);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            z-index: 10001;
+            transition: transform 0.3s ease;
+            border: 1px solid var(--accent);
+            box-shadow: var(--glow-medium);
+            font-family: var(--font-heading);
+            letter-spacing: 1px;
+            text-align: center;
+            max-width: 90%;
+        }
+
+        .toast.show {
             transform: translateX(-50%) translateY(0);
         }
 
-        /* Responsive */
+        /* ============================================
+           ANIMACIONES
+        ============================================ */
+        @keyframes logoFloat {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 200% 50%; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes modalIn {
+            from { 
+                opacity: 0;
+                transform: translateY(-50px) scale(0.9);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        /* ============================================
+           RESPONSIVE
+        ============================================ */
         @media (max-width: 768px) {
-            .header-content h1 {
-                font-size: 2.2rem;
+            .splash-text {
+                font-size: 1.8rem;
             }
             
-            .header-content p {
-                font-size: 1.1rem;
+            .header-title {
+                font-size: 1.8rem;
             }
             
-            .app-logo {
-                width: 100px;
-                height: 100px;
-            }
-            
-            .app-logo img {
-                width: 60%;
-                height: 60%;
-            }
-            
-            .locations-grid {
-                grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-                gap: 20px;
-            }
-            
-            .location-btn {
-                padding: 20px 15px;
-                font-size: 1.1rem;
-            }
-            
-            .detect-btn {
-                padding: 12px 24px;
-                font-size: 1rem;
-            }
-
-            .install-steps {
+            .location-buttons {
                 flex-direction: column;
-                gap: 10px;
             }
             
-            .step {
-                flex-direction: row;
-                justify-content: flex-start;
-                text-align: left;
+            .localidades-grid {
+                grid-template-columns: 1fr;
             }
             
-            .step i {
-                font-size: 1.2rem;
-                min-width: 30px;
-            }
-
-            .share-buttons {
-                grid-template-columns: 1fr 1fr;
-                gap: 10px;
+            .share-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
             
-            .share-btn {
-                padding: 10px 15px;
-                font-size: 0.9rem;
+            .modal-buttons {
+                flex-direction: column;
             }
         }
 
         @media (max-width: 480px) {
-            .header-content h1 {
-                font-size: 1.8rem;
+            .splash-text {
+                font-size: 1.5rem;
             }
             
-            .app-logo {
-                width: 80px;
-                height: 80px;
+            .header-title {
+                font-size: 1.5rem;
             }
             
-            .app-logo img {
-                width: 100%;
-                height: 100%;
+            .section-title {
+                font-size: 1.5rem;
             }
             
-            .locations-grid {
+            .share-grid {
                 grid-template-columns: 1fr;
             }
             
-            .suggestion-btns {
-                flex-direction: column;
-                gap: 10px;
+            .location-section,
+            .install-section,
+            .share-section {
+                padding: 25px 15px;
+                margin: 0 10px 30px;
             }
-            
-            .btn {
-                width: 100%;
-            }
-
-            .share-buttons {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* Clase para screen readers */
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border: 0;
         }
     </style>
 </head>
 <body>
-
-     <div id="splash-screen" class="splash-screen">
-        <div class="splash-particles" id="splashParticles"></div>
-        <div class="splash-grid"></div>
+    <!-- Splash Screen -->
+    <div id="splash-screen" class="splash-screen">
         <div class="splash-logo">
-            <img src="./shared/img/icon-192x192.webp" class="logo-icon" alt="logo de la app">
+            <img src="https://tubarrioaunclick.com/shared/img/icon-512x512.webp" alt="Logo">
         </div>
-        <h1 class="splash-text">Tu Barrio A Un Click</h1>
-        <div class="loading-bar-container">
-            <div class="loading-bar" id="loadingBar"></div>
+        <h1 class="splash-text">TU BARRIO A UN CLICK</h1>
+        <div class="loading-container">
+            <div class="loading-bar">
+                <div class="loading-progress" id="loading-progress"></div>
+            </div>
         </div>
-        <p class="loading-text" id="loadingText">Cargando experiencia local...</p>
-        <button onclick="skipSplash()" class="skip-btn">Saltar</button>
+        <p style="color: rgba(255,255,255,0.7); margin-top: 20px;">Inicializando experiencia premium...</p>
     </div>
 
-    <!-- Partículas de fondo -->
-    <div class="particles" id="particles"></div>
+    <!-- Header Principal -->
+    <header class="main-header">
+        <div class="header-logo">
+            <img src="https://tubarrioaunclick.com/shared/img/icon-512x512.webp" alt="Logo">
+        </div>
+        <h1 class="header-title">TU BARRIO A UN CLICK</h1>
+        <p class="header-subtitle">Conectá con comercios y servicios locales en tu zona. Economía local, comunidad global.</p>
+    </header>
 
-    <div class="container">
-        <header role="banner" id="mainHeader">
-            <div class="header-content">
-                <div class="app-logo" id="mainLogo">
-                    <img src="./shared/img/icon-192x192.webp" alt="Tu Barrio A Un Click">
+    <main>
+        <!-- Sección Ubicación - CORREGIDA -->
+        <section class="location-section" id="location-section">
+            <h2 class="location-title">
+                <i class="fas fa-map-marker-alt"></i> ¿DÓNDE ESTÁS?
+            </h2>
+            <p style="margin-bottom: 25px; opacity: 0.9;">Seleccioná tu localidad o permití que detectemos automáticamente tu ubicación aproximada.</p>
+            
+            <!-- Información de permisos -->
+            <div class="permission-info" id="permission-info" style="display: none;">
+                <i class="fas fa-info-circle"></i>
+                <span id="permission-text">El navegador te pedirá permiso para acceder a tu ubicación</span>
+            </div>
+            
+            <div class="location-buttons">
+                <button class="location-btn detect" id="detect-location">
+                    <i class="fas fa-crosshairs"></i> DETECTAR AUTOMÁTICO
+                </button>
+                
+                <button class="location-btn" id="manual-select">
+                    <i class="fas fa-hand-pointer"></i> ELEGIR MANUALMENTE
+                </button>
+            </div>
+            
+            <div class="location-status" id="location-status" style="display: none;">
+                <i class="fas fa-spinner fa-spin"></i>
+                <span id="status-text">Detectando tu ubicación...</span>
+            </div>
+            
+            <!-- Fallback para geolocalización -->
+            <div id="location-fallback" style="display: none; margin-top: 20px;">
+                <p style="color: #ff6b6b; margin-bottom: 15px;">
+                    <i class="fas fa-exclamation-triangle"></i> 
+                    No pudimos detectar tu ubicación automáticamente. Por favor, seleccioná tu localidad manualmente:
+                </p>
+            </div>
+            
+            <!-- Indicador de HTTPS -->
+            <div id="https-warning" style="display: none; margin-top: 20px; padding: 15px; background: rgba(255, 107, 107, 0.1); border-radius: 10px; border: 1px solid rgba(255, 107, 107, 0.3);">
+                <p style="color: #ff6b6b; margin-bottom: 10px;">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <strong>IMPORTANTE:</strong> La geolocalización precisa requiere HTTPS
+                </p>
+                <p style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.7);">
+                    Para una mejor experiencia, accedé a la app desde: 
+                    <a href="https://tubarrioaunclick.com" style="color: var(--accent);">https://tubarrioaunclick.com</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- Sección Localidades -->
+        <section class="localidades-section">
+            <h2 class="section-title">SELECCIONÁ TU LOCALIDAD</h2>
+            
+            <div class="localidades-grid">
+                <a href="./castelar/index.html" class="localidad-card" data-location="castelar">
+                    <div class="card-icon">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <h3 class="card-title">CASTELAR</h3>
+                    <p>Comercios, servicios y gastronomía local</p>
+                </a>
+                
+                <a href="./ituzaingo/index.html" class="localidad-card" data-location="ituzaingo">
+                    <div class="card-icon">
+                        <i class="fas fa-store-alt"></i>
+                    </div>
+                    <h3 class="card-title">ITUZAINGÓ</h3>
+                    <p>Economía local y comunidad conectada</p>
+                </a>
+                
+                <a href="./moron/index.html" class="localidad-card" data-location="moron">
+                    <div class="card-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="card-title">MORÓN</h3>
+                    <p>Gastronomía y servicios premium</p>
+                </a>
+                
+                <a href="./merlo/index.html" class="localidad-card" data-location="merlo">
+                    <div class="card-icon">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <h3 class="card-title">MERLO</h3>
+                    <p>Cafeterías y comercios locales</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Sección Instalación PWA -->
+        <section class="install-section">
+            <h2 class="section-title">
+                <i class="fas fa-rocket"></i> EXPERIENCIA NATIVA
+            </h2>
+            <p style="margin-bottom: 20px; opacity: 0.9; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Instalá la app en tu teléfono para acceder más rápido, recibir notificaciones y usar todas las funciones offline.
+            </p>
+            
+            <button class="install-btn" id="install-btn">
+                <i class="fas fa-download"></i> INSTALAR APP
+            </button>
+            
+            <div style="margin-top: 25px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <div style="text-align: center; padding: 15px; background: rgba(255,255,255,0.05); border-radius: 10px;">
+                    <i class="fas fa-bolt" style="color: var(--accent); font-size: 1.5rem; margin-bottom: 10px;"></i>
+                    <p style="font-size: 0.9rem;">Acceso más rápido</p>
                 </div>
-                <div class="header-text">
-                    <h1>Tu Barrio A Un Click</h1>
-                    <p>Seleccioná tu localidad para acceder a comercios, servicios y comunidad local</p>
+                <div style="text-align: center; padding: 15px; background: rgba(255,255,255,0.05); border-radius: 10px;">
+                    <i class="fas fa-bell" style="color: var(--neon-pink); font-size: 1.5rem; margin-bottom: 10px;"></i>
+                    <p style="font-size: 0.9rem;">Notificaciones</p>
+                </div>
+                <div style="text-align: center; padding: 15px; background: rgba(255,255,255,0.05); border-radius: 10px;">
+                    <i class="fas fa-wifi-slash" style="color: var(--neon-green); font-size: 1.5rem; margin-bottom: 10px;"></i>
+                    <p style="font-size: 0.9rem;">Funciona offline</p>
                 </div>
             </div>
-        </header>
+        </section>
 
-        <main role="main">
-            <section class="location-detection" aria-labelledby="location-detection-title">
-                <h3 id="location-detection-title"><i class="fas fa-location-arrow"></i> ¿Querés que te sugiera tu localidad?</h3>
-                <p>Hacé clic en el botón para detectar tu ubicación aproximada y recomendarte la versión de la app que más te conviene según tu zona.</p>
-                <button class="detect-btn" id="detectLocationBtn" aria-describedby="location-detection-desc">
-                    <i class="fas fa-map-marker-alt"></i> Detectar mi ubicación
-                </button>
-                <p id="location-detection-desc" class="sr-only">Botón para detectar automáticamente tu ubicación y sugerirte la localidad más cercana</p>
-            </section>
-
-            <!-- Botón de Instalar App -->
-            <section class="install-app-section" aria-labelledby="install-app-title">
-                <div class="install-app-card">
-                    <h3 id="install-app-title"><i class="fas fa-mobile-alt"></i> ¿Querés la App en tu teléfono?</h3>
-                    <p>Instalá Tu Barrio A Un Click en tu pantalla de inicio para acceder más rápido</p>
-                    <button class="install-btn" id="installButton" aria-label="Instalar aplicación en el dispositivo">
-                        <i class="fas fa-download"></i> Instalar App
-                    </button>
-                    <div class="install-steps" aria-label="Pasos para instalar la aplicación">
-                        <div class="step">
-                            <i class="fas fa-share" aria-hidden="true"></i>
-                            <span>Tocá el botón "Compartir"</span>
-                        </div>
-                        <div class="step">
-                            <i class="fas fa-plus-circle" aria-hidden="true"></i>
-                            <span>Seleccioná "Agregar a pantalla de inicio"</span>
-                        </div>
-                        <div class="step">
-                            <i class="fas fa-check" aria-hidden="true"></i>
-                            <span>¡Listo! La app quedará instalada</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Botón de Compartir App -->
-            <section class="share-app-section" aria-labelledby="share-app-title">
-                <div class="share-app-card">
-                    <h3 id="share-app-title"><i class="fas fa-share-alt"></i> ¡Compartí con tus vecinos!</h3>
-                    <p>Ayudá a que más gente conozca los comercios de tu zona</p>
-                    <div class="share-buttons">
-                        <button class="share-btn whatsapp" data-platform="whatsapp" aria-label="Compartir en WhatsApp">
-                            <i class="fab fa-whatsapp"></i> WhatsApp
-                        </button>
-                        <button class="share-btn facebook" data-platform="facebook" aria-label="Compartir en Facebook">
-                            <i class="fab fa-facebook"></i> Facebook
-                        </button>
-                        <button class="share-btn instagram" data-platform="instagram" aria-label="Compartir en Instagram">
-                            <i class="fab fa-instagram"></i> Instagram
-                        </button>
-                        <button class="share-btn copy-link" data-platform="copy" aria-label="Copiar enlace de la aplicación">
-                            <i class="fas fa-link"></i> Copiar Enlace
-                        </button>
-                    </div>
-                </div>
-            </section>
+        <!-- Sección Recomendación -->
+        <section class="share-section">
+            <h2 class="section-title">
+                <i class="fas fa-share-alt"></i> ¡COMPARTÍ CON VECINOS!
+            </h2>
+            <p style="margin-bottom: 30px; opacity: 0.9; max-width: 700px; margin-left: auto; margin-right: auto;">
+                Ayudá a que más gente conozca los comercios de tu zona. Cada recomendación fortalece la economía local.
+            </p>
             
-            <section class="locations-section" aria-labelledby="locations-title">
-                <h2 id="locations-title">Seleccioná tu Localidad</h2>
-                <div class="locations-grid" role="navigation" aria-label="Navegación entre localidades">
-                    <a href="./castelar/index.html" class="location-btn" aria-label="Acceder a la sección de Castelar">
-                        <i class="fas fa-map-marker-alt"></i>Castelar
-                    </a>
-                    <a href="./ituzaingo/index.html" class="location-btn" aria-label="Acceder a la sección de Ituzaingó">
-                        <i class="fas fa-map-marker-alt"></i>Ituzaingó
-                    </a>
-                    <a href="./moron/index.html" class="location-btn" aria-label="Acceder a la sección de Morón">
-                        <i class="fas fa-map-marker-alt"></i>Morón
-                    </a>
-                    <a href="./merlo/index.html" class="location-btn" aria-label="Acceder a la sección de Merlo">
-                        <i class="fas fa-map-marker-alt"></i>Merlo
-                    </a>
-                </div>
-            </section>
-        </main>
+            <div class="share-grid">
+                <button class="share-btn whatsapp" data-platform="whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </button>
+                
+                <button class="share-btn facebook" data-platform="facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                </button>
+                
+                <button class="share-btn instagram" data-platform="instagram">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </button>
+                
+                <button class="share-btn copy" data-platform="copy">
+                    <i class="fas fa-link"></i>
+                    <span>Copiar Enlace</span>
+                </button>
+            </div>
+            
+            <div style="margin-top: 40px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 15px;">
+                <p style="color: var(--accent); font-family: var(--font-heading); letter-spacing: 1px;">
+                    <i class="fas fa-users"></i> 
+                    <span id="community-count">1000+</span> VECINOS YA CONECTADOS
+                </p>
+                <p style="font-size: 0.9rem; margin-top: 10px; opacity: 0.7;">
+                    Cada compartido suma a nuestra comunidad
+                </p>
+            </div>
+        </section>
+    </main>
 
-        <footer role="contentinfo">
-            <p>Tu Barrio A Un Click - Conectando comunidades desde 2025</p>
-        </footer>
-    </div>
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p style="margin-bottom: 10px;">Tu Barrio A Un Click © 2025</p>
+        <p style="font-size: 0.9rem; opacity: 0.6;">Conectando comunidades, impulsando economías locales</p>
+    </footer>
 
-    <div class="overlay" id="overlay" aria-hidden="true"></div>
-    
-    <div class="location-suggestion" id="locationSuggestion" role="dialog" aria-labelledby="suggestion-title" aria-modal="true">
-        <h3 id="suggestion-title"><i class="fas fa-map-marker-check"></i> ¡Hola vecino!</h3>
-        <p id="suggestionText">Detectamos que estás cerca de <strong id="detectedCity"></strong>. ¿Querés acceder directamente a la app de Tu Barrio A Un Click para esta localidad?</p>
-        <div class="suggestion-btns">
-            <button class="btn btn-primary" id="acceptSuggestion" aria-label="Aceptar sugerencia y acceder a la localidad detectada">Sí, acceder ahora</button>
-            <button class="btn btn-secondary" id="declineSuggestion" aria-label="Rechazar sugerencia y elegir manualmente">Elegir manualmente</button>
+    <!-- Modal Sugerencia Ubicación -->
+    <div class="modal-overlay" id="location-modal">
+        <div class="modal">
+            <h3><i class="fas fa-map-marked-alt"></i> ¡TE DETECTAMOS!</h3>
+            <p id="modal-message">Parece que estás cerca de <strong id="detected-location">[LOCALIDAD]</strong>. ¿Querés acceder directamente a esta sección?</p>
+            
+            <div class="modal-buttons">
+                <button class="modal-btn primary" id="accept-location">
+                    <i class="fas fa-check"></i> SÍ, ACCEDER
+                </button>
+                <button class="modal-btn" id="decline-location">
+                    <i class="fas fa-times"></i> ELEGIR OTRA
+                </button>
+            </div>
         </div>
     </div>
- 
-    <script src="./shared/js/splash.js" defer></script>
 
+    <!-- Scripts -->
     <script>
-        // =============================================
-        // GESTIÓN DE PARTÍCULAS DE FONDO
-        // =============================================
+        // ============================================
+        // SISTEMA PRINCIPAL - GEOLOCALIZACIÓN CORREGIDA
+        // ============================================
 
-        function createParticles() {
-            const particlesContainer = document.getElementById('particles');
-            const particleCount = 50;
-            
-            for (let i = 0; i < particleCount; i++) {
-                const particle = document.createElement('div');
-                particle.classList.add('particle');
-                
-                // Posición aleatoria
-                particle.style.left = `${Math.random() * 100}%`;
-                particle.style.top = `${Math.random() * 100}%`;
-                
-                // Tamaño aleatorio
-                const size = Math.random() * 3 + 1;
-                particle.style.width = `${size}px`;
-                particle.style.height = `${size}px`;
-                
-                // Opacidad aleatoria
-                particle.style.opacity = Math.random() * 0.5 + 0.1;
-                
-                // Duración de animación aleatoria
-                particle.style.animationDuration = `${Math.random() * 20 + 10}s`;
-                particle.style.animationDelay = `${Math.random() * 5}s`;
-                
-                particlesContainer.appendChild(particle);
-            }
-        }
-
-        // =============================================
-        // DETECCIÓN DE UBICACIÓN MEJORADA - COORDENADAS CORREGIDAS
-        // =============================================
-
-        // COORDENADAS PRECISAS CORREGIDAS PARA CASTELAR Y ZONA OESTE
-        const supportedLocations = [
-            { name: 'Castelar', slug: 'castelar', lat: -34.6489, lng: -58.6475, priority: 1 }, // Coordenadas exactas de Castelar
-            { name: 'Ituzaingó', slug: 'ituzaingo', lat: -34.6589, lng: -58.6662, priority: 3 },
-            { name: 'Morón', slug: 'moron', lat: -34.6510, lng: -58.6167, priority: 4 },
-            { name: 'Merlo', slug: 'merlo', lat: -34.6605, lng: -58.7322, priority: 5 }
-        ];
-
-        let userLocation = null;
-        let detectedCity = '';
-        let detectedSlug = '';
-
-        // Función para redirigir a la app de la localidad
-        function redirectToApp(slug) {
-            window.location.href = `${slug}/index.html`;
-        }
-
-        // Calcular distancia usando fórmula de Haversine (MEJORADA)
-        function calculateDistance(lat1, lon1, lat2, lon2) {
-            const R = 6371; // Radio de la tierra en km
-            const dLat = (lat2 - lat1) * Math.PI / 180;
-            const dLon = (lon2 - lon1) * Math.PI / 180;
-            const a = 
-                Math.sin(dLat/2) * Math.sin(dLat/2) +
-                Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * 
-                Math.sin(dLon/2) * Math.sin(dLon/2);
-            const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
-            const distance = R * c;
-            
-            // Para debugging - mostrar en consola
-            console.log(`📍 Distancia calculada: ${distance.toFixed(3)}km desde (${lat1}, ${lon1}) hasta (${lat2}, ${lon2})`);
-            
-            return distance;
-        }
-
-        // Encontrar la localidad más cercana - FUNCIÓN COMPLETAMENTE REESCRITA
-        function findClosestLocation(lat, lng) {
-            console.log('🔍 Iniciando búsqueda de localidad más cercana...');
-            console.log('📍 Tu ubicación detectada:', lat, lng);
-            
-            let closest = null;
-            let minDistance = Infinity;
-            let distances = [];
-
-            for (const location of supportedLocations) {
-                const distance = calculateDistance(lat, lng, location.lat, location.lng);
-                distances.push({ name: location.name, distance: distance });
-                
-                // PRIORIZAMOS CASTELAR si está dentro de un radio razonable
-                if (location.name === 'Castelar' && distance < 5) { // 5km de radio para Castelar
-                    console.log(`🎯 PRIORIDAD CASTELAR: Encontrado a ${distance.toFixed(2)}km`);
-                    return location;
-                }
-                
-                // Para otras localidades, buscamos la más cercana
-                if (distance < minDistance) {
-                    minDistance = distance;
-                    closest = location;
-                }
-            }
-            
-            // Mostrar todas las distancias en consola para debugging
-            console.log('📊 Distancias a todas las localidades:');
-            distances.sort((a, b) => a.distance - b.distance);
-            distances.forEach(item => {
-                console.log(`   ${item.name}: ${item.distance.toFixed(2)}km`);
-            });
-            
-            if (closest) {
-                console.log(`✅ Localidad detectada: ${closest.name} (${minDistance.toFixed(2)}km)`);
-            } else {
-                console.log('❌ No se encontró localidad cercana');
-            }
-            
-            return closest;
-        }
-
-        // Mostrar toast de error
-        function showError(message) {
-            // Remover toast existente si hay uno
-            const existingToast = document.querySelector('.error-toast');
-            if (existingToast) {
-                existingToast.remove();
-            }
-
-            const errorToast = document.createElement('div');
-            errorToast.className = 'error-toast';
-            errorToast.innerHTML = `<i class="fas fa-exclamation-triangle"></i> ${message}`;
-            document.body.appendChild(errorToast);
-            
-            // Mostrar toast
-            setTimeout(() => errorToast.classList.add('show'), 100);
-            
-            // Remover después de 5 segundos
-            setTimeout(() => {
-                errorToast.classList.remove('show');
-                setTimeout(() => {
-                    if (errorToast.parentNode) {
-                        errorToast.parentNode.removeChild(errorToast);
-                    }
-                }, 300);
-            }, 5000);
-        }
-
-        // Manejar errores de geolocalización
-        function handleGeolocationError(error) {
-            console.error('Error de geolocalización:', error);
-            
-            const errorMessages = {
-                1: 'Para usar la detección automática, necesitamos acceso a tu ubicación. Por favor, permite el acceso en la configuración de tu navegador.',
-                2: 'No pudimos obtener tu ubicación. Verifica tu conexión a internet o GPS.',
-                3: 'La detección de ubicación tardó demasiado. Intenta nuevamente.',
-                0: 'Error desconocido al detectar la ubicación.'
-            };
-            
-            const errorMessage = errorMessages[error.code] || errorMessages[0];
-            showError(errorMessage);
-            console.log('Detalles del error:', error);
-        }
-
-        // Resetear botón de detección
-        function resetDetectButton() {
-            const detectBtn = document.getElementById('detectLocationBtn');
-            detectBtn.innerHTML = '<i class="fas fa-map-marker-alt"></i> Detectar mi ubicación';
-            detectBtn.disabled = false;
-        }
-
-        // Obtener ubicación del usuario con manejo mejorado de errores
-        function getUserLocation() {
-            console.log('📍 Iniciando detección de ubicación...');
-            
-            const detectBtn = document.getElementById('detectLocationBtn');
-            const originalText = detectBtn.innerHTML;
-            
-            detectBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Detectando...';
-            detectBtn.disabled = true;
-
-            // Timeout de seguridad
-            const timeoutId = setTimeout(() => {
-                if (detectBtn.disabled) {
-                    detectBtn.innerHTML = originalText;
-                    detectBtn.disabled = false;
-                    showError('La detección está tomando más tiempo de lo esperado. Intenta nuevamente.');
-                    console.log('⏰ Timeout de geolocalización alcanzado');
-                }
-            }, 15000);
-
-            if (navigator.geolocation) {
-                console.log('✅ Geolocalización soportada, solicitando permisos...');
-                
-                navigator.geolocation.getCurrentPosition(
-                    (position) => {
-                        clearTimeout(timeoutId);
-                        const { latitude, longitude } = position.coords;
-                        userLocation = { lat: latitude, lng: longitude };
-                        
-                        console.log('📍 Ubicación obtenida:', latitude, longitude);
-                        console.log('🎯 Precisión:', position.coords.accuracy, 'metros');
-                        
-                        const closestLocation = findClosestLocation(latitude, longitude);
-                        if (closestLocation) {
-                            detectedCity = closestLocation.name;
-                            detectedSlug = closestLocation.slug;
-                            console.log(`✅ Sugiriendo: ${detectedCity}`);
-                            showLocationSuggestion();
-                        } else {
-                            showError('No pudimos detectar una localidad cercana. Por favor seleccioná manualmente.');
-                            resetDetectButton();
-                        }
-                    },
-                    (error) => {
-                        clearTimeout(timeoutId);
-                        console.log('❌ Error obteniendo ubicación:', error);
-                        handleGeolocationError(error);
-                        resetDetectButton();
-                    },
-                    { 
-                        timeout: 10000,
-                        maximumAge: 300000, // 5 minutos de cache
-                        enableHighAccuracy: true // Mayor precisión para diferenciar Castelar de Padua
-                    }
-                );
-            } else {
-                clearTimeout(timeoutId);
-                showError('Tu navegador no soporta la geolocalización.');
-                resetDetectButton();
-            }
-        }
-
-        // Mostrar sugerencia de localidad
-        function showLocationSuggestion() {
-            if (detectedCity) {
-                document.getElementById('detectedCity').textContent = detectedCity;
-                document.getElementById('locationSuggestion').classList.add('show');
-                document.getElementById('overlay').classList.add('show');
-                document.getElementById('overlay').setAttribute('aria-hidden', 'false');
-                resetDetectButton();
-                
-                console.log(`📍 Modal mostrado para: ${detectedCity}`);
-                
-                // Enfocar el primer botón del modal para accesibilidad
-                setTimeout(() => {
-                    document.getElementById('acceptSuggestion').focus();
-                }, 100);
-            }
-        }
-
-        function hideLocationSuggestion() {
-            document.getElementById('locationSuggestion').classList.remove('show');
-            document.getElementById('overlay').classList.remove('show');
-            document.getElementById('overlay').setAttribute('aria-hidden', 'true');
-            console.log('❌ Modal de sugerencia cerrado');
-        }
-
-        // =============================================
-        // INSTALACIÓN DE LA PWA
-        // =============================================
-
-        let deferredPrompt;
-        const installButton = document.getElementById('installButton');
-
-        // Escuchar el evento beforeinstallprompt
-        window.addEventListener('beforeinstallprompt', (e) => {
-            // Prevenir que el mini-infobar aparezca en mobile
-            e.preventDefault();
-            // Guardar el evento para poder activarlo después
-            deferredPrompt = e;
-            // Mostrar el botón de instalación
-            installButton.style.display = 'inline-flex';
-        });
-
-        // Evento click en el botón de instalación
-        installButton.addEventListener('click', async () => {
-            if (deferredPrompt) {
-                // Mostrar el prompt de instalación
-                deferredPrompt.prompt();
-                // Esperar a que el usuario responda al prompt
-                const { outcome } = await deferredPrompt.userChoice;
-                
-                if (outcome === 'accepted') {
-                    console.log('Usuario aceptó instalar la PWA');
-                    installButton.innerHTML = '<i class="fas fa-check"></i> ¡App Instalada!';
-                    installButton.disabled = true;
-                } else {
-                    console.log('Usuario rechazó instalar la PWA');
-                }
-                
-                // Limpiar la referencia
-                deferredPrompt = null;
-                // Ocultar el botón
-                installButton.style.display = 'none';
-            }
-        });
-
-        // Ocultar el botón si la app ya está instalada
-        window.addEventListener('appinstalled', () => {
-            console.log('PWA fue instalada');
-            installButton.style.display = 'none';
-            deferredPrompt = null;
-        });
-
-        // Verificar si la app ya está instalada y ocultar el botón
-        if (window.matchMedia('(display-mode: standalone)').matches || 
-            window.navigator.standalone === true) {
-            installButton.style.display = 'none';
-        }
-
-        // =============================================
-        // GESTIÓN DE COMPARTIR EN REDES SOCIALES
-        // =============================================
-
-        class ShareManager {
+        class TuBarrioApp {
             constructor() {
-                this.url = window.location.href;
-                this.title = 'Tu Barrio A Un Click';
-                this.text = '¡Encontrá todos los comercios y servicios de tu zona en una sola app!';
-                this.hashtags = 'TuBarrioAUnClick,ComerciosLocales,Barrio';
+                this.deferredPrompt = null;
+                this.geolocationTimeout = null;
+                this.suggestedLocation = null;
+                this.shareCount = 0;
+                this.locationPermission = null;
                 
                 this.init();
             }
 
             init() {
-                document.querySelectorAll('.share-btn').forEach(btn => {
-                    btn.addEventListener('click', (e) => {
-                        const platform = e.currentTarget.dataset.platform;
-                        this.share(platform);
-                    });
+                // Iniciar splash screen
+                this.initSplash();
+                
+                // Verificar HTTPS y permisos
+                this.checkHTTPS();
+                
+                // Inicializar sistemas
+                this.initLocation();
+                this.initPWA();
+                this.initSharing();
+                this.initCommunity();
+                
+                console.log('🚀 Tu Barrio A Un Click - Sistema iniciado');
+            }
+
+            // ============================================
+            // 1. SPLASH SCREEN
+            // ============================================
+            initSplash() {
+                const splash = document.getElementById('splash-screen');
+                const progressBar = document.getElementById('loading-progress');
+                
+                let progress = 0;
+                const interval = setInterval(() => {
+                    progress += Math.random() * 20 + 5;
+                    if (progress >= 100) {
+                        progress = 100;
+                        clearInterval(interval);
+                        
+                        setTimeout(() => {
+                            splash.classList.add('hidden');
+                            setTimeout(() => {
+                                splash.style.display = 'none';
+                            }, 800);
+                        }, 500);
+                    }
+                    
+                    progressBar.style.width = `${progress}%`;
+                }, 200);
+            }
+
+            // ============================================
+            // 2. VERIFICAR HTTPS
+            // ============================================
+            checkHTTPS() {
+                const isHTTPS = window.location.protocol === 'https:';
+                const warningDiv = document.getElementById('https-warning');
+                
+                if (!isHTTPS) {
+                    warningDiv.style.display = 'block';
+                    console.warn('⚠️ La app está en HTTP. La geolocalización será limitada.');
+                }
+            }
+
+            // ============================================
+            // 3. SISTEMA DE UBICACIÓN - CORREGIDO
+            // ============================================
+            initLocation() {
+                const detectBtn = document.getElementById('detect-location');
+                const manualBtn = document.getElementById('manual-select');
+                const statusDiv = document.getElementById('location-status');
+                const statusText = document.getElementById('status-text');
+                const permissionDiv = document.getElementById('permission-info');
+                const permissionText = document.getElementById('permission-text');
+                
+                // Verificar si geolocation está disponible
+                if (!navigator.geolocation) {
+                    detectBtn.disabled = true;
+                    detectBtn.innerHTML = '<i class="fas fa-exclamation-triangle"></i> NO SOPORTADO';
+                    this.showToast('Tu navegador no soporta geolocalización', 'error');
+                    return;
+                }
+                
+                // Botón de detección automática
+                detectBtn.addEventListener('click', () => {
+                    this.startLocationDetection();
+                });
+                
+                // Botón de selección manual
+                manualBtn.addEventListener('click', () => {
+                    this.showManualSelection();
+                });
+                
+                // Configurar modal
+                document.getElementById('accept-location').addEventListener('click', () => {
+                    if (this.suggestedLocation) {
+                        window.location.href = `./${this.suggestedLocation.slug}/index.html`;
+                    }
+                });
+                
+                document.getElementById('decline-location').addEventListener('click', () => {
+                    document.getElementById('location-modal').classList.remove('active');
                 });
             }
 
-            share(platform) {
-                switch (platform) {
+            async startLocationDetection() {
+                const detectBtn = document.getElementById('detect-location');
+                const statusDiv = document.getElementById('location-status');
+                const statusText = document.getElementById('status-text');
+                const permissionDiv = document.getElementById('permission-info');
+                
+                // Reset estado
+                detectBtn.disabled = true;
+                detectBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> DETECTANDO...';
+                statusDiv.style.display = 'block';
+                statusText.textContent = 'Iniciando detección...';
+                permissionDiv.style.display = 'block';
+                permissionDiv.innerHTML = '<i class="fas fa-info-circle"></i> El navegador te pedirá permiso para acceder a tu ubicación.';
+                
+                try {
+                    // PRIMERO: Intentar con GPS del dispositivo (más preciso)
+                    const gpsLocation = await this.getGPSLocation();
+                    
+                    if (gpsLocation) {
+                        console.log('📍 GPS exitoso:', gpsLocation.latitude, gpsLocation.longitude);
+                        this.findClosestLocation(gpsLocation.latitude, gpsLocation.longitude);
+                        return;
+                    }
+                    
+                    // SEGUNDO: Si GPS falla, intentar con IP geolocation
+                    statusText.textContent = 'Intentando detección por red...';
+                    const ipLocation = await this.getIPLocation();
+                    
+                    if (ipLocation) {
+                        console.log('📍 IP exitoso:', ipLocation.latitude, ipLocation.longitude);
+                        this.findClosestLocation(ipLocation.latitude, ipLocation.longitude);
+                        return;
+                    }
+                    
+                    // TERCERO: Si todo falla, mostrar opciones manuales
+                    throw new Error('No se pudo obtener la ubicación');
+                    
+                } catch (error) {
+                    console.error('Error en detección:', error);
+                    this.handleLocationError(error);
+                } finally {
+                    // Restaurar botón
+                    setTimeout(() => {
+                        detectBtn.disabled = false;
+                        detectBtn.innerHTML = '<i class="fas fa-crosshairs"></i> DETECTAR AUTOMÁTICO';
+                        statusDiv.style.display = 'none';
+                        permissionDiv.style.display = 'none';
+                    }, 1000);
+                }
+            }
+
+            // Método GPS - Pide permiso explícitamente
+            getGPSLocation() {
+                return new Promise((resolve, reject) => {
+                    if (!navigator.geolocation) {
+                        reject('Geolocalización no soportada');
+                        return;
+                    }
+                    
+                    // Mostrar que estamos esperando permiso
+                    const statusText = document.getElementById('status-text');
+                    statusText.textContent = 'Esperando permiso de ubicación...';
+                    
+                    // Configurar opciones
+                    const options = {
+                        enableHighAccuracy: true,
+                        timeout: 10000, // 10 segundos máximo
+                        maximumAge: 0 // No usar caché
+                    };
+                    
+                    // Limpiar timeout anterior
+                    if (this.geolocationTimeout) {
+                        clearTimeout(this.geolocationTimeout);
+                    }
+                    
+                    // Timeout para no esperar eternamente
+                    this.geolocationTimeout = setTimeout(() => {
+                        reject('Timeout: No se obtuvo respuesta del GPS');
+                    }, 15000);
+                    
+                    // Solicitar ubicación
+                    navigator.geolocation.getCurrentPosition(
+                        (position) => {
+                            clearTimeout(this.geolocationTimeout);
+                            
+                            // Guardar permiso
+                            this.locationPermission = 'granted';
+                            
+                            resolve({
+                                latitude: position.coords.latitude,
+                                longitude: position.coords.longitude,
+                                accuracy: position.coords.accuracy,
+                                source: 'gps'
+                            });
+                        },
+                        (error) => {
+                            clearTimeout(this.geolocationTimeout);
+                            
+                            // Manejar diferentes tipos de error
+                            let errorMessage = 'Error desconocido';
+                            let permissionStatus = 'denied';
+                            
+                            switch(error.code) {
+                                case 1: // PERMISSION_DENIED
+                                    errorMessage = 'Permiso denegado. Por favor activa la ubicación en tu navegador.';
+                                    permissionStatus = 'denied';
+                                    break;
+                                case 2: // POSITION_UNAVAILABLE
+                                    errorMessage = 'Ubicación no disponible. Verifica tu conexión.';
+                                    permissionStatus = 'unavailable';
+                                    break;
+                                case 3: // TIMEOUT
+                                    errorMessage = 'Tiempo de espera agotado. Intenta nuevamente.';
+                                    permissionStatus = 'timeout';
+                                    break;
+                            }
+                            
+                            this.locationPermission = permissionStatus;
+                            reject(new Error(errorMessage));
+                        },
+                        options
+                    );
+                });
+            }
+
+            // Método IP - Servicio más confiable
+            async getIPLocation() {
+                try {
+                    // Intentar con varios servicios (uno tras otro si falla)
+                    const services = [
+                        'https://ipapi.co/json/',
+                        'https://freegeoip.app/json/',
+                        'https://geolocation-db.com/json/'
+                    ];
+                    
+                    for (const service of services) {
+                        try {
+                            const response = await fetch(service, {
+                                signal: AbortSignal.timeout(3000) // 3 segundos máximo
+                            });
+                            
+                            if (!response.ok) continue;
+                            
+                            const data = await response.json();
+                            
+                            // Verificar que tenga coordenadas
+                            if (data.latitude && data.longitude) {
+                                console.log(`✅ IP service: ${service}`);
+                                return {
+                                    latitude: data.latitude,
+                                    longitude: data.longitude,
+                                    city: data.city,
+                                    country: data.country_name,
+                                    source: 'ip',
+                                    service: service
+                                };
+                            }
+                        } catch (serviceError) {
+                            console.log(`❌ Falló servicio IP: ${service}`);
+                            continue;
+                        }
+                    }
+                    
+                    throw new Error('Todos los servicios IP fallaron');
+                    
+                } catch (error) {
+                    console.error('Error IP geolocation:', error);
+                    return null;
+                }
+            }
+
+            findClosestLocation(lat, lng) {
+                const locations = [
+                    { name: 'Castelar', slug: 'castelar', lat: -34.6489, lng: -58.6475, radius: 8 },
+                    { name: 'Ituzaingó', slug: 'ituzaingo', lat: -34.6589, lng: -58.6662, radius: 8 },
+                    { name: 'Morón', slug: 'moron', lat: -34.6510, lng: -58.6167, radius: 9 },
+                    { name: 'Merlo', slug: 'merlo', lat: -34.6605, lng: -58.7322, radius: 10 }
+                ];
+                
+                let closest = null;
+                let minDistance = Infinity;
+                
+                for (const loc of locations) {
+                    const distance = this.calculateDistance(lat, lng, loc.lat, loc.lng);
+                    console.log(`Distancia a ${loc.name}: ${distance.toFixed(1)}km`);
+                    
+                    if (distance < loc.radius && distance < minDistance) {
+                        minDistance = distance;
+                        closest = loc;
+                    }
+                }
+                
+                if (closest) {
+                    console.log(`✅ Localidad detectada: ${closest.name} (${minDistance.toFixed(1)}km)`);
+                    this.suggestedLocation = closest;
+                    
+                    // Mostrar sugerencia después de un breve delay
+                    setTimeout(() => {
+                        this.showLocationSuggestion(closest);
+                    }, 500);
+                    
+                } else {
+                    console.log('📍 No se detectó localidad cercana');
+                    this.showToast('No encontramos comercios en tu zona cercana', 'info');
+                    
+                    // Mostrar opciones manuales
+                    setTimeout(() => {
+                        this.showFallbackOptions();
+                    }, 1000);
+                }
+            }
+
+            calculateDistance(lat1, lon1, lat2, lon2) {
+                const R = 6371; // Radio de la Tierra en km
+                const dLat = (lat2 - lat1) * Math.PI / 180;
+                const dLon = (lon2 - lon1) * Math.PI / 180;
+                const a = 
+                    Math.sin(dLat/2) * Math.sin(dLat/2) +
+                    Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * 
+                    Math.sin(dLon/2) * Math.sin(dLon/2);
+                const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+                return R * c;
+            }
+
+            handleLocationError(error) {
+                console.error('Error de ubicación:', error.message);
+                
+                // Mensajes amigables para el usuario
+                let userMessage = 'No pudimos detectar tu ubicación. ';
+                
+                if (error.message.includes('Permiso denegado')) {
+                    userMessage += 'Por favor, habilita los permisos de ubicación en tu navegador.';
+                } else if (error.message.includes('Timeout')) {
+                    userMessage += 'La detección tardó demasiado. Intenta nuevamente.';
+                } else {
+                    userMessage += 'Por favor, selecciona tu localidad manualmente.';
+                }
+                
+                this.showToast(userMessage, 'error', 5000);
+                
+                // Mostrar opciones manuales
+                this.showFallbackOptions();
+            }
+
+            showLocationSuggestion(location) {
+                document.getElementById('detected-location').textContent = location.name;
+                document.getElementById('modal-message').innerHTML = `
+                    Detectamos que estás cerca de <strong>${location.name}</strong>. 
+                    ¿Querés acceder directamente a la sección de comercios locales de esta zona?
+                    <br><br>
+                    <small style="opacity: 0.7;">
+                        <i class="fas fa-info-circle"></i> También podés elegir otra localidad manualmente
+                    </small>
+                `;
+                document.getElementById('location-modal').classList.add('active');
+            }
+
+            showFallbackOptions() {
+                const fallbackDiv = document.getElementById('location-fallback');
+                
+                if (!fallbackDiv) return;
+                
+                fallbackDiv.style.display = 'block';
+                fallbackDiv.innerHTML = `
+                    <p style="color: #ff6b6b; margin-bottom: 15px;">
+                        <i class="fas fa-exclamation-triangle"></i> 
+                        No pudimos detectar tu ubicación automáticamente. Por favor, seleccioná tu localidad manualmente:
+                    </p>
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
+                        <button onclick="window.location.href='./castelar/index.html'" class="location-btn" style="padding: 10px;">
+                            <i class="fas fa-city"></i> Castelar
+                        </button>
+                        <button onclick="window.location.href='./ituzaingo/index.html'" class="location-btn" style="padding: 10px;">
+                            <i class="fas fa-store-alt"></i> Ituzaingó
+                        </button>
+                        <button onclick="window.location.href='./moron/index.html'" class="location-btn" style="padding: 10px;">
+                            <i class="fas fa-utensils"></i> Morón
+                        </button>
+                        <button onclick="window.location.href='./merlo/index.html'" class="location-btn" style="padding: 10px;">
+                            <i class="fas fa-coffee"></i> Merlo
+                        </button>
+                    </div>
+                `;
+                
+                // Hacer scroll a esta sección
+                fallbackDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+
+            showManualSelection() {
+                this.showToast('Seleccioná una localidad de la lista', 'info');
+                
+                // Hacer scroll a la sección de localidades
+                document.querySelector('.localidades-section').scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'center'
+                });
+            }
+
+            // ============================================
+            // 4. SISTEMA PWA - INSTALACIÓN
+            // ============================================
+            initPWA() {
+                const installBtn = document.getElementById('install-btn');
+                
+                // Evento beforeinstallprompt
+                window.addEventListener('beforeinstallprompt', (e) => {
+                    console.log('📱 PWA: beforeinstallprompt disparado');
+                    e.preventDefault();
+                    this.deferredPrompt = e;
+                    
+                    // Mostrar botón si no está instalado
+                    if (!this.isInstalled()) {
+                        installBtn.style.display = 'inline-flex';
+                    }
+                    
+                    // Configurar botón
+                    installBtn.onclick = async () => {
+                        if (!this.deferredPrompt) {
+                            this.showToast('La instalación no está disponible', 'info');
+                            return;
+                        }
+                        
+                        installBtn.disabled = true;
+                        installBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> INSTALANDO...';
+                        
+                        try {
+                            this.deferredPrompt.prompt();
+                            const { outcome } = await this.deferredPrompt.userChoice;
+                            
+                            if (outcome === 'accepted') {
+                                console.log('✅ PWA instalada');
+                                installBtn.innerHTML = '<i class="fas fa-check"></i> ¡INSTALADA!';
+                                installBtn.classList.add('installed');
+                                this.showToast('¡App instalada exitosamente!', 'success');
+                            } else {
+                                installBtn.innerHTML = '<i class="fas fa-download"></i> INSTALAR APP';
+                                installBtn.disabled = false;
+                                this.showToast('Instalación cancelada', 'info');
+                            }
+                            
+                            this.deferredPrompt = null;
+                            
+                        } catch (error) {
+                            console.error('Error instalación:', error);
+                            installBtn.innerHTML = '<i class="fas fa-download"></i> INSTALAR APP';
+                            installBtn.disabled = false;
+                            this.showToast('Error en la instalación', 'error');
+                        }
+                    };
+                });
+
+                // Ocultar si ya está instalado
+                window.addEventListener('appinstalled', () => {
+                    console.log('✅ PWA instalada por evento');
+                    installBtn.style.display = 'none';
+                    this.deferredPrompt = null;
+                });
+
+                // Verificar estado inicial
+                if (this.isInstalled()) {
+                    installBtn.style.display = 'none';
+                    installBtn.innerHTML = '<i class="fas fa-check"></i> ¡YA INSTALADA!';
+                    installBtn.classList.add('installed');
+                    installBtn.disabled = true;
+                }
+            }
+
+            isInstalled() {
+                return window.matchMedia('(display-mode: standalone)').matches || 
+                       window.navigator.standalone === true;
+            }
+
+            // ============================================
+            // 5. SISTEMA DE COMPARTIR
+            // ============================================
+            initSharing() {
+                document.querySelectorAll('.share-btn').forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        const platform = e.currentTarget.dataset.platform;
+                        this.handleShare(platform);
+                    });
+                });
+                
+                // Cargar contador de compartidos
+                this.shareCount = parseInt(localStorage.getItem('shareCount') || '0');
+                this.updateCommunityCount();
+            }
+
+            handleShare(platform) {
+                const shareData = {
+                    title: 'Tu Barrio A Un Click',
+                    text: '¡Descubrí todos los comercios y servicios de tu zona! Conectate con tu comunidad local. #TuBarrioAUnClick',
+                    url: window.location.href
+                };
+                
+                switch(platform) {
                     case 'whatsapp':
-                        this.shareWhatsApp();
+                        this.shareWhatsApp(shareData);
                         break;
                     case 'facebook':
-                        this.shareFacebook();
+                        this.shareFacebook(shareData);
                         break;
                     case 'instagram':
                         this.shareInstagram();
                         break;
                     case 'copy':
-                        this.copyLink();
+                        this.copyLink(shareData.url);
                         break;
                 }
+                
+                // Registrar compartido
+                this.recordShare();
             }
 
-            shareWhatsApp() {
-                const shareUrl = `https://wa.me/?text=${encodeURIComponent(this.text + ' ' + this.url)}`;
-                window.open(shareUrl, '_blank', 'width=600,height=400');
-                this.showToast('¡Enlace copiado para WhatsApp!');
+            shareWhatsApp(data) {
+                const text = encodeURIComponent(`${data.text}\n\n${data.url}`);
+                window.open(`https://wa.me/?text=${text}`, '_blank', 'width=600,height=400');
+                this.showToast('¡Compartiendo en WhatsApp!', 'success');
             }
 
-            shareFacebook() {
-                const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(this.url)}`;
-                window.open(shareUrl, '_blank', 'width=600,height=400');
+            shareFacebook(data) {
+                window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(data.url)}`, '_blank', 'width=600,height=400');
+                this.showToast('¡Compartiendo en Facebook!', 'success');
             }
 
             shareInstagram() {
-                this.showToast('¡Copiá el enlace y compartilo en tus stories de Instagram!');
-                // En un caso real, aquí podrías abrir Instagram o mostrar instrucciones
+                this.showToast(
+                    'Para compartir en Instagram:\n1. Hacé captura de pantalla\n2. Subila a tus stories\n3. Mencionanos como @TuBarrioAUnClick',
+                    'info',
+                    4000
+                );
             }
 
-            async copyLink() {
+            async copyLink(url) {
                 try {
-                    await navigator.clipboard.writeText(this.url);
-                    this.showToast('¡Enlace copiado al portapapeles!');
+                    await navigator.clipboard.writeText(url);
+                    this.showToast('✅ ¡Enlace copiado al portapapeles!', 'success');
                 } catch (err) {
-                    // Fallback para navegadores más antiguos
+                    // Fallback
                     const textArea = document.createElement('textarea');
-                    textArea.value = this.url;
+                    textArea.value = url;
                     document.body.appendChild(textArea);
                     textArea.select();
                     document.execCommand('copy');
                     document.body.removeChild(textArea);
-                    this.showToast('¡Enlace copiado al portapapeles!');
+                    this.showToast('✅ ¡Enlace copiado!', 'success');
                 }
             }
 
-            showToast(message) {
-                // Remover toast existente si hay uno
-                const existingToast = document.querySelector('.share-toast');
-                if (existingToast) {
-                    existingToast.remove();
+            recordShare() {
+                this.shareCount++;
+                localStorage.setItem('shareCount', this.shareCount.toString());
+                this.updateCommunityCount();
+                
+                // Mostrar logro cada 5 compartidos
+                if (this.shareCount % 5 === 0) {
+                    this.showToast(`🎉 ¡${this.shareCount} recomendaciones! Gracias por ayudar a la comunidad.`, 'success', 3000);
                 }
+            }
 
+            updateCommunityCount() {
+                const countElement = document.getElementById('community-count');
+                if (countElement) {
+                    const baseCount = 1000;
+                    const shareBonus = this.shareCount * 10;
+                    const finalCount = baseCount + shareBonus;
+                    
+                    // Animar el número
+                    this.animateValue(countElement, parseInt(countElement.textContent) || baseCount, finalCount, 1000);
+                }
+            }
+
+            // ============================================
+            // 6. COMUNIDAD Y EXTRAS
+            // ============================================
+            initCommunity() {
+                // Efectos de hover en tarjetas
+                document.querySelectorAll('.localidad-card').forEach(card => {
+                    card.addEventListener('mouseenter', () => {
+                        card.style.transform = 'translateY(-10px) scale(1.02)';
+                    });
+                    
+                    card.addEventListener('mouseleave', () => {
+                        card.style.transform = 'translateY(0) scale(1)';
+                    });
+                });
+            }
+
+            animateValue(element, start, end, duration) {
+                let startTimestamp = null;
+                const step = (timestamp) => {
+                    if (!startTimestamp) startTimestamp = timestamp;
+                    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                    const value = Math.floor(progress * (end - start) + start);
+                    element.textContent = `${value}+`;
+                    if (progress < 1) {
+                        requestAnimationFrame(step);
+                    }
+                };
+                requestAnimationFrame(step);
+            }
+
+            // ============================================
+            // 7. UTILIDADES - TOASTS
+            // ============================================
+            showToast(message, type = 'info', duration = 3000) {
                 const toast = document.createElement('div');
-                toast.className = 'share-toast';
-                toast.innerHTML = `<i class="fas fa-check-circle"></i> ${message}`;
+                toast.className = `toast ${type}`;
+                toast.textContent = message;
+                
+                // Estilos según tipo
+                const colors = {
+                    success: { 
+                        border: '#00ff9d', 
+                        bg: 'linear-gradient(145deg, rgba(0, 255, 157, 0.1), rgba(0, 255, 157, 0.05))',
+                        icon: 'fas fa-check-circle'
+                    },
+                    error: { 
+                        border: '#ff6b6b', 
+                        bg: 'linear-gradient(145deg, rgba(255, 107, 107, 0.1), rgba(255, 107, 107, 0.05))',
+                        icon: 'fas fa-exclamation-circle'
+                    },
+                    info: { 
+                        border: 'var(--accent)', 
+                        bg: 'linear-gradient(145deg, rgba(0, 245, 255, 0.1), rgba(0, 245, 255, 0.05))',
+                        icon: 'fas fa-info-circle'
+                    }
+                };
+                
+                const config = colors[type] || colors.info;
+                
+                toast.style.borderColor = config.border;
+                toast.style.background = config.bg;
+                toast.innerHTML = `<i class="${config.icon}" style="margin-right: 10px; color: ${config.border};"></i> ${message}`;
+                
                 document.body.appendChild(toast);
                 
-                // Mostrar toast
-                setTimeout(() => toast.classList.add('show'), 100);
+                // Mostrar
+                setTimeout(() => toast.classList.add('show'), 10);
                 
-                // Remover después de 3 segundos
+                // Ocultar y remover
                 setTimeout(() => {
                     toast.classList.remove('show');
-                    setTimeout(() => {
-                        if (toast.parentNode) {
-                            toast.parentNode.removeChild(toast);
-                        }
-                    }, 300);
-                }, 3000);
+                    setTimeout(() => toast.remove(), 300);
+                }, duration);
             }
         }
 
-        // =============================================
-        // INICIALIZACIÓN
-        // =============================================
+        // ============================================
+        // INICIALIZACIÓN DE LA APLICACIÓN
+        // ============================================
 
-        document.addEventListener('DOMContentLoaded', function() {
-            console.log('🚀 Inicializando Tu Barrio A Un Click...');
+        // Esperar a que cargue todo
+        window.addEventListener('DOMContentLoaded', () => {
+            // Iniciar aplicación
+            const app = new TuBarrioApp();
             
-            // Crear partículas de fondo
-            createParticles();
-
-            // Inicializar gestión de compartir
-            new ShareManager();
-
-            // Event listeners para detección de ubicación
-            document.getElementById('detectLocationBtn').addEventListener('click', getUserLocation);
-            
-            document.getElementById('acceptSuggestion').addEventListener('click', function() {
-                if (detectedSlug) {
-                    console.log(`✅ Aceptando sugerencia: redirigiendo a ${detectedSlug}`);
-                    redirectToApp(detectedSlug);
-                }
-            });
-            
-            document.getElementById('declineSuggestion').addEventListener('click', function() {
-                console.log('❌ Rechazando sugerencia');
-                hideLocationSuggestion();
-            });
-            
-            document.getElementById('overlay').addEventListener('click', hideLocationSuggestion);
-
-            // Cerrar modal con ESC
-            document.addEventListener('keydown', function(e) {
-                if (e.key === 'Escape') {
-                    hideLocationSuggestion();
-                }
-            });
-
-         // Service Worker para recursos compartidos - VERSIÓN MEJORADA
-        document.addEventListener('DOMContentLoaded', function() {
+            // Registrar Service Worker si existe
             if ('serviceWorker' in navigator) {
-                // 🆕 VERIFICAR SI ESTAMOS EN LA PÁGINA PRINCIPAL (no en localidades)
-                const isMainPage = !window.location.pathname.includes('/castelar/') && 
-                                  !window.location.pathname.includes('/moron/') && 
-                                  !window.location.pathname.includes('/ituzaingo/') && 
-                                  !window.location.pathname.includes('/merlo/');
-                
-                if (isMainPage) {
-                    // Esperar un poco para asegurar que config.js se cargó
-                    setTimeout(() => {
-                        if (window.APP_CONFIG && window.APP_CONFIG.BASE_PATH) {
-                            const swPath = `${window.APP_CONFIG.BASE_PATH}/sw.js`;
-                            const scope = `${window.APP_CONFIG.BASE_PATH}/`;
-                            
-                            console.log('🔄 Registrando SW en página principal...');
-                            console.log('📍 Ruta:', swPath);
-                            console.log('🎯 Scope:', scope);
-                            
-                            navigator.serviceWorker.register(swPath, {
-                                scope: scope,
-                                updateViaCache: 'none'
-                            })
-                            .then(registration => {
-                                console.log('✅ SW registrado correctamente en página principal');
-                            })
-                            .catch(err => {
-                                console.log('❌ Error registrando SW:', err.message);
-                            });
-                        } else {
-                            console.log('ℹ️ APP_CONFIG no disponible - No se registra SW');
-                        }
-                    }, 1000);
-                } else {
-                    console.log('ℹ️ En localidad - SW manejado por main-2.js');
-                }
+                navigator.serviceWorker.register('./sw.js')
+                    .then(reg => console.log('✅ Service Worker registrado'))
+                    .catch(err => console.log('❌ Error SW:', err));
             }
-        });  
             
-            console.log('✅ Aplicación inicializada correctamente');
+            // Hacer global para debugging
+            window.app = app;
+            
+            // Manejar errores globales
+            window.addEventListener('error', (e) => {
+                console.error('Error capturado:', e.error);
+            });
+            
+            console.log('✅ Aplicación completamente cargada');
         });
 
-        // Manejar errores no capturados
-        window.addEventListener('error', function(e) {
-            console.error('Error capturado:', e.error);
-        });
-
-        // Manejar promesas rechazadas no capturadas
-        window.addEventListener('unhandledrejection', function(e) {
-            console.error('Promesa rechazada no capturada:', e.reason);
-            e.preventDefault();
-        });
-        
-        // Función de debug para probar coordenadas específicas
-        window.debugLocation = function(lat, lng) {
-            console.log('🔍 DEBUG - Probando coordenadas:', lat, lng);
-            const closest = findClosestLocation(lat, lng);
-            if (closest) {
-                console.log(`✅ DEBUG - Localidad detectada: ${closest.name}`);
-                alert(`DEBUG: Localidad detectada: ${closest.name}`);
-            } else {
-                console.log('❌ DEBUG - No se detectó localidad');
-                alert('DEBUG: No se detectó localidad');
-            }
-        };
+        // Polyfill para AbortSignal.timeout si no existe
+        if (!AbortSignal.timeout) {
+            AbortSignal.timeout = function(ms) {
+                const controller = new AbortController();
+                setTimeout(() => controller.abort(new Error('Timeout')), ms);
+                return controller.signal;
+            };
+        }
     </script>
 </body>
 </html>
